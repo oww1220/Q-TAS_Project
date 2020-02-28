@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Q-tas품질종합분석시스템::품질지표 및 품질비용(COPQ) 절감과 고객만족을 실현합니다.</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/renew/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/board.css" />
+
+    <link rel="stylesheet" type="text/css" href="../js/css/jquery.treeview.css" />
+
+    
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.function.js"> </script>
+    <script type="text/javascript" src="../js/jquery.form.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/insertFlash.js"></script>
+    <script type="text/javascript" src="../js/jquery.Floater.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.treeview.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+    
+    <!--해더, 푸터 인크루드 용js-->
+	<script type="text/javascript" src= "../css/renew/include.js"></script>
+	
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header" class="header">
+	</header>
+	<!--//해더-->
+
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="content">
+
+            <!--path-->
+            <div class="path_w">
+                <div class="inner">
+                    <ul class="clear_both">
+                        <li>
+                            <div class="home"><a href="">home</a></div>
+                        </li>
+
+                        <li>
+                            <div class="select_custum color">
+                                <button type="button">마스터 관리</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">마스터 관리</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//path-->
+
+            <div class="sub_wrap">
+
+                <!--서브타이틀-->
+                <div class="title_w">
+                    <h2>마스터 관리</h2>
+                </div>
+                <!--//서브타이틀-->
+
+                <div class="tab_nav length02 mgt60">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>권한부여</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>신제품 모델 설정</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_in_nav">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>공지사항</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>통합품질정보</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>품질지표</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="master_list">
+                    <form action="">
+
+                        <div class="table_top mgt40">
+                            <div class="left">
+                                <div class="btn_w ml5 mgt5">
+                                    <button class="btn_col7 widthA" type="button">전체</button>
+                                    <button class="btn_col8 active" type="button">ㄱ</button>
+                                    <button class="btn_col8" type="button">ㄴ</button>
+                                    <button class="btn_col8" type="button">ㄷ</button>
+                                    <button class="btn_col8" type="button">ㄹ</button>
+                                    <button class="btn_col8" type="button">ㅁ</button>
+                                    <button class="btn_col8" type="button">ㅂ</button>
+                                    <button class="btn_col8" type="button">ㅅ</button>
+                                    <button class="btn_col8" type="button">ㅇ</button>
+                                    <button class="btn_col8" type="button">ㅈ</button>
+                                    <button class="btn_col8" type="button">ㅊ</button>
+                                    <button class="btn_col8" type="button">ㅋ</button>
+                                    <button class="btn_col8" type="button">ㅌ</button>
+                                    <button class="btn_col8" type="button">ㅍ</button>
+                                    <button class="btn_col8" type="button">ㅎ</button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="btn_w">
+                                    <div class="input_c">
+                                        <input id="check_all" type="checkbox">
+                                        <label for="check_all">전체 선택</label>
+                                    </div>
+                                    <button class="btn_add" type="button">추가</button>
+                                    <button class="btn_delete" type="button">제거</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="check_list mgt15">
+                            <ul class="clear_both">
+                                <li>
+                                    <input id="check_01" type="checkbox">
+                                    <label for="check_01">서현종</label>
+                                </li>
+                                <li>
+                                    <input id="check_02" type="checkbox">
+                                    <label for="check_02">전인규</label>
+                                </li>
+                                <li>
+                                    <input id="check_03" type="checkbox">
+                                    <label for="check_03">품질보증팀</label>
+                                </li>
+                                <li>
+                                    <input id="check_04" type="checkbox">
+                                    <label for="check_04">서현종</label>
+                                </li>
+                                <li>
+                                    <input id="check_05" type="checkbox">
+                                    <label for="check_05">서현종</label>
+                                </li>
+                                <li>
+                                    <input id="check_06" type="checkbox">
+                                    <label for="check_06">서현종</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="table_top mgt40">
+                            <div class="left">
+                                <div class="btn_w ml5 mgt5">
+                                    <button class="btn_col7 widthA active" type="button">전체</button>
+                                    <button class="btn_col7 widthA" type="button">정수기</button>
+                                    <button class="btn_col7 widthA" type="button">청정기</button>
+                                    <button class="btn_col7 widthA" type="button">비데</button>
+                                    <button class="btn_col7 widthA" type="button">연수기</button>
+                                    <button class="btn_col7 widthA" type="button">의류청정기</button>
+                                    <button class="btn_col7 widthA" type="button">기타</button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="btn_w">
+                                    <div class="input_c">
+                                        <input id="check_all2" type="checkbox">
+                                        <label for="check_all2">전체 선택</label>
+                                    </div>
+                                    <button class="btn_add" type="button">추가</button>
+                                    <button class="btn_delete" type="button">제거</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="check_list mgt15">
+                            <ul class="clear_both">
+                                <li>
+                                    <input id="check_001" type="checkbox">
+                                    <label for="check_001">AP-1019D</label>
+                                </li>
+                                <li>
+                                    <input id="check_002" type="checkbox">
+                                    <label for="check_002">CHP-2500</label>
+                                </li>
+                                <li>
+                                    <input id="check_003" type="checkbox">
+                                    <label for="check_003">P-5900</label>
+                                </li>
+                                <li>
+                                    <input id="check_004" type="checkbox">
+                                    <label for="check_004">SU-7900</label>
+                                </li>
+                                <li>
+                                    <input id="check_005" type="checkbox">
+                                    <label for="check_005">SU-7900</label>
+                                </li>
+                                <li>
+                                    <input id="check_006" type="checkbox">
+                                    <label for="check_006">SU-7900</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn_w mgt50 ml20">
+                            <button class="btn_col1 rnd" type="button">확인</button>
+                            <button class="btn_col1 gray rnd" type="button">취소</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!--PM 선택하기 레이어-->
+                <div class="pop_layer layer-t01">
+                    <div class="pop_inner">
+                        <h3>PM 선택하기</h3>
+                        <div class="pop_scroll">
+                            <div class="pop_scroll_in" style="width: 520px;">
+                                <div class="pop_cont">
+
+                                    <!---->
+                                    <div class="input_s" style="width: 100%;">
+                                        <input type="text" placeholder="PM명을 입력하세요.">
+                                        <button type="button">검색</button>
+                                    </div>
+
+                                    <div class="sidetreecontrol mgt15">
+                                        <img src="../image/renew/organ_coway.gif" alt="웅진코웨이" />
+                                        <ul class="tree mgt5">
+                                            <li>
+                                                <strong><img src="../image/renew/organ_team.gif" alt=""><span>임원실1</span></strong>
+                                                <ul>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <strong><img src="../image/renew/organ_team.gif" alt=""><span>임원실2</span></strong>
+                                                <ul>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                    <li>
+                                                        <strong><img src="../image/renew/organ_team.gif" alt=""><span>임원실 내부</span></strong>
+                                                        <ul>
+                                                            <li><a href="#"><img src="../image/renew/organ_profile.gif" alt=""><span>서현종</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="btn_w mgt50">
+                                        <button class="btn_l_col1 rnd" type="button">확인</button>
+                                        <button class="btn_l_col1 gray rnd layer_close" type="button" data-layer="layer-t01">취소</button>
+                                    </div>
+
+                                    <!--//-->
+
+                                </div>
+
+                                <a href="#" class="btn_l_close layer_close" data-layer="layer-t01">닫기</a>	
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--//PM 선택하기 레이어-->
+
+                <div class="layer_dimmed">레이어 배경</div>
+
+                <script>
+                $(function(){
+                    $(".header .log_wrap .admin").trigger("click");
+
+                    $(".tree").treeview({
+                        collapsed: true,
+                        animated: "medium",
+                        persist: "location"
+                    });
+                });
+                </script>
+
+            </div>
+			
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>

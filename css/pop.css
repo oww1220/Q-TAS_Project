@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* WoongJin Holdings CIT SM4 KYS 9832 */
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#6e6e6e;line-height:16px}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+a,img,input{outline:none;selector-dummy:expression!(this.hideFocus=true);}
+
+ 
+/* Layout */
+body{background-color:#ffffff;text-align:center}
+.pop_wrap{width:778px;height:635px;margin:0 auto;background:url(../image/QnA/pop_answer_bg.jpg) 0 0 no-repeat;text-align:center}
+.pop_model{width:370px;height:417px;margin:0 auto;text-align:center}
+.pop_model .header{float:left;width:370px; height:41px;background-color:#ea0000;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:14px;color:#ffffff;font-weight:bold}
+.pop_model .header .subject{display:inline;float:left;margin:13px 0 0 20px}
+.pop_model .header .close{float:right}
+
+ 
+/* Content */
+.pop_container{overflow:hidden;width:712px;margin:0 auto}
+.pop_container .content{display:inline;overflow:hidden;float:left;width:712px;margin-top:22px;padding-left:90px}
+.pop_container .content .tit{display:inline;overflow:hidden;float:left;width:622px;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:14px;color:#4c4c4c;font-weight:bold;padding:7px 0px}
+.pop_container .content .writer{display:inline;overflow:hidden;float:left;width:622px;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#6a6a6b;padding:3px 0px}
+.pop_container .content .attach{display:inline;overflow:hidden;float:left;width:622px;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:11px;color:#a6a6a6;padding:3px 0px}
+.pop_container .editor{display:inline;overflow:hidden;float:left;width:712px;margin-top:12px; margin-bottom:23px}
+
+.model_container{display:inline;overflow:hidden;float:left;width:330px;margin:0 20px auto}
+.model_container .content{display:inline;overflow:hidden;float:left;width:330px;margin:20px 0 23px}
+.model_container .content .txt{display:inline;overflow:hidden;float:left;width:330px;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#535353;padding:2px 0 8px;border-bottom:1px solid #e0e0e0}
+
+/* DIV overflow 속성 */
+.model_list_area{display:inline;float:left;margin-left:10px;width:308px;height:227px;border-top:1px solid #abadb3;border-right:1px solid #dbdfe6;border-bottom:1px solid #e3e9ef;border-left:1px solid #e2e3ea;text-align:center;overflow-x:hidden;overflow-y:scroll}
+.organ_list_area{display:inline;float:left;margin-left:10px;width:308px;height:227px;border-top:1px solid #abadb3;border-right:1px solid #dbdfe6;border-bottom:1px solid #e3e9ef;border-left:1px solid #e2e3ea;text-align:center;overflow-x:hidden;overflow-y:hidden}
+
+/* 검색영역 속성 */
+.srch{width:100%;padding:10px 0 8px}
+.srch legend{overflow:hidden;visibility:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.srch{color:#c4c4c4;text-align:center}
+.srch select,.srch input{margin:-1px 0 1px;font-size:12px;color:#373737;vertical-align:middle}
+.srch .keyword{margin-left:1px;padding:2px 3px 5px;border:1px solid #b5b5b5;font-size:12px;line-height:15px}
+
+/* 탭 메뉴 속성 */
+.tab_menu{float:left;width:100%;margin-top:-2px;margin-right:-3px}
+.tab_menu ul{text-align:left;width:300px; }
+.tab_menu ol{text-align:left;width:320px; }
+.tab_menu li{padding:10px 10px 10px 0;_display:inline;float:left;text-align:left;border-bottom:1px solid #e5e3f2;width:70px;color:#6f6f6f;display:block;background-color:#ffffff}
+.tab_menu li span{display:block}
+.tab_menu li a{display:block;padding:6px 22px 3px 3px;_padding:6px 22px 0px 3px;color:#6f6f6f;text-decoration:none;text-align:left}
+.tab_menu li a:hover{color:#6f6f6f;text-decoration:underline;text-align:left}
+.tab_menu li.selected{background-color:#ea0000;color:#FFFFFF}
+.tab_menu li.selected a{color:#FFFFFF;_color:#FFFFFF;text-align:left}
+
+/* btn */
+.btn_cen{text-align:center} 
+
+/* font */
+.login_team{font-weight:bold;color:#444444}
+.login_user{ font-weight:bold;color:#3267e5}
+.answer_writer{color:#5a84e9}
+.b{font-weight:bold}
+
+/* DPP */
+.dpp_container{display:inline;overflow:hidden;float:left;width:530px;margin:0 20px auto}
+.dpp_container .content{display:inline;overflow:hidden;float:left;width:530px;margin:30px 0 23px}
+
+/* DPP */
+.pop_dpp{width:570px;height:530px;margin:0 auto;text-align:center}
+.pop_dpp .header{float:left;width:570px; height:41px;background-color:#365ebe;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:14px;color:#ffffff;font-weight:bold}
+.pop_dpp .header .subject{display:inline;float:left;margin:13px 0 0 20px}
+.pop_dpp .header .close{float:right}
+
+/* STOCK */
+.pop_stock{width:570px;height:640px;margin:0 auto;text-align:center}
+.pop_stock .header{float:left;width:570px; height:41px;background-color:#365ebe;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:14px;color:#ffffff;font-weight:bold}
+.pop_stock .header .subject{display:inline;float:left;margin:13px 0 0 20px}
+.pop_stock .header .close{float:right}
+
+/* SVC */
+.pop_svc{width:570px;height:458px;margin:0 auto;text-align:center}
+.pop_svc .header{float:left;width:570px; height:41px;background-color:#365ebe;text-align:left;font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:14px;color:#ffffff;font-weight:bold}
+.pop_svc .header .subject{display:inline;float:left;margin:13px 0 0 20px}
+.pop_svc .header .close{float:right}
+
+/* 품질지표 쓰기 속성 */
+.pop_indicator_write,.pop_indicator_write th,.pop_indicator_write td{border:0}
+.pop_indicator_write{width:530px;float:left;padding:3px 0;border-top:3px solid #688be1;border-bottom:2px solid #bcbcbc;font-family:'돋움',dotum;font-size:12px;table-layout:fixed}
+.pop_indicator_write caption{display:none}
+.pop_indicator_write th{padding:9px 10px 6px;border-bottom:1px solid #eeeeee;background:#f8f8ff;color:#666;font-weight:bold;text-align:center;vertical-align:middle}
+.pop_indicator_write th strong{color:#4e6ed5;font-weight:bold;text-align:left}
+.pop_indicator_write td{padding:9px 5px 6px 5px;border-bottom:1px solid #eeeeee;color:#666666;line-height:16px;vertical-align:top; text-align:left}
+.pop_indicator_write a:link{color:#909090;text-decoration:none}
+.pop_indicator_write a:alink{color:#909090;text-decoration:none}
+.pop_indicator_write a:visited{color:#909090;text-decoration:none}
+.pop_indicator_write a:hover{color:#3569e3;text-decoration:underline}
+.pop_indicator_write select{margin:1px 5px 2px 0;padding:2px;font-size:12px;color:#6f6f6f;vertical-align:middle}
+.pop_indicator_write input{margin:0; padding:2px;font-size:12px;color:#373737;vertical-align:top}
+.pop_indicator_write .addimg{padding:10px 5px 10px 5px;border-top:1px solid #eeeeee;color:#666666;line-height:28px;*line-height:28px;vertical-align:top}
+.pop_indicator_write .red{color:#fc3b10}
+.pop_indicator_write .blue{color:#4e76d5}
+.pop_indicator_write .gray{color:#ababab}
+.pop_indicator_write .aqua{color:#3b9fc7}
+
+/* 품질지표 읽기 속성 */
+
+.pop_indicator_view,.pop_indicator_view th,.pop_indicator_view td{border:0}
+.pop_indicator_view{width:530px;float:left;padding:3px 0;border-top:3px solid #688be1;border-bottom:2px solid #bcbcbc;font-family:'돋움',dotum;font-size:12px;table-layout:fixed}
+.pop_indicator_view caption{display:none}
+.pop_indicator_view th{padding:12px 10px 8px;border-bottom:1px solid #eeeeee;background:#f8f8ff;color:#666;font-weight:bold;text-align:center;vertical-align:middle}
+.pop_indicator_view th strong{color:#4e6ed5;font-weight:bold;text-align:left}
+.pop_indicator_view td{padding:12px 5px 8px 5px;border-bottom:1px solid #eeeeee;color:#666666;line-height:16px;vertical-align:top; text-align:left}
+.pop_indicator_view a:link{color:#909090;text-decoration:none}
+.pop_indicator_view a:alink{color:#909090;text-decoration:none}
+.pop_indicator_view a:visited{color:#909090;text-decoration:none}
+.pop_indicator_view a:hover{color:#3569e3;text-decoration:underline}
+.pop_indicator_view input{margin:0;padding:2px;font-size:12px;color:#373737;vertical-align:top}
+.pop_indicator_view .red{color:#fc3b10}
+.pop_indicator_view .blue{color:#4e76d5}
+.pop_indicator_view .gray{color:#ababab}
+.pop_indicator_view .aqua{color:#3b9fc7}
+
+
+/* [PopUp] 바이어 선택하기, [PopUP] 국가 선택하기 */
+.popHeader{position:relative; width:328px; height:13px; padding:14px 21px; background-color:#ea0000;}
+.popHeader h1{font:bold 14px 'Dotum'; color:#fff; text-align:left;}
+.popHeader a{position:absolute; right:9px; top:9px;}
+
+.popContainer{width:330px; padding:24px 20px 26px;}
+.popContainer h2{padding-bottom:11px; font:bold 12px 'Dotum'; color:#535353; text-align:left; border-bottom:1px solid #e0e0e0;}
+.popContainer .popForm{margin:9px auto;}
+	.popContainer .popForm input[type="text"]{width:184px; height:19px; line-height:19px; padding:0 4px; vertical-align:middle; border:1px solid #d2d2d2;}
+	.popContainer .popForm label a img{vertical-align:middle;}
+
+.popCountryListWrap{width:308px; margin:0 auto 20px;  border:1px solid #dbdfe6; border-top:1px solid #abadb3;}
+.popCountryListWrap dt{overflow:hidden;font:bold 12px 'Dotum'; color:#535353; background-color:#f8f8ff; border-bottom:1px solid #e5e3f2;}
+	.popCountryListTitle0{float:left; width:51px; padding:5px 0 3px; border-right:1px solid #e5e3f2;}
+	.popCountryListTitle1{float:left;width:256px; padding:5px 0 3px;}
+.popCountryListWrap dd{height:374px; overflow-y:auto; overflow-x:hidden;}
+	.popCountryList{}
+	.popCountryList li{overflow:hidden; height:24px; text-align:left; border-bottom:1px solid #e5e3f2;}
+	.popCountryList li:after{content:''; clear:both; display:block;}
+	.popCountryList li input[type="checkbox"]{float:left; width:13px; height:13px; margin:6px 19px 0;}
+	.popCountryList li label{overflow:hidden; float:left; width:220px; height:24px; margin:0; padding:1px 0; line-height:24px; vertical-align:middle; text-overflow:ellipsis; white-space:nowrap; text-align:left; text-indent:10px; border-left:1px solid #e5e3f2;}
+
+	

@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Q-tas품질종합분석시스템::품질지표 및 품질비용(COPQ) 절감과 고객만족을 실현합니다.</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/renew/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/board.css" />
+    
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.function.js"> </script>
+    <script type="text/javascript" src="../js/jquery.form.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/insertFlash.js"></script>
+    <script type="text/javascript" src="../js/jquery.Floater.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+    
+    <!--해더, 푸터 인크루드 용js-->
+	<script type="text/javascript" src= "../css/renew/include.js"></script>
+	
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header" class="header">
+	</header>
+	<!--//해더-->
+
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="content">
+
+            <!--path-->
+            <div class="path_w">
+                <div class="inner">
+                    <ul class="clear_both">
+                        <li>
+                            <div class="home"><a href="">home</a></div>
+                        </li>
+                        <li>
+                            <div class="select_custum">
+                                <button type="button">품질종합분석시스템</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">통합품질정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">Q-Report</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">품질지표</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="5">공지사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="6">자료실</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="7">Q&A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_custum color">
+                                <button type="button">품질종합분석시스템목적</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템목적</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">품질불량분석프로세스</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">시스템 주요 기능</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">시스템 사용방법</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//path-->
+
+            <div class="sub_wrap">
+
+                <!--서브타이틀-->
+                <div class="title_w">
+                    <h2>반환분석_개선과제 집계현황</h2>
+                </div>
+                <!--//서브타이틀-->
+
+                <!--검색박스(기간)-->
+                <div class="s_box_p_w">
+                    <form action="">
+                        <div class="s_box_p mgt40">
+                            <div class="left">
+                                <div class="btn_w">
+                                    <button class="btn_col4 active" type="button">모델별</button>
+                                    <button class="btn_col4" type="button">부품별</button>
+                                    <button class="btn_col4" type="button">진행 현황별</button>
+                                    <button class="btn_col4" type="button">개선 방안별</button>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label for="">기간선택</label>
+                                <div class="date_w mgl10">
+                                    <div class="ui_date">
+                                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                    </div>
+                                    <span>~</span>
+                                    <div class="ui_date">
+                                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btn_w mgt30">
+                            <button class="btn_col0 rnd" type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//검색박스(기간)-->
+
+
+                <!--테이블 리스트-->
+                <div class="table_list_w mgt40">
+
+                    <div class="table_top mgb15">
+                        <div class="left">
+                            <!--
+                            <select name="" id="" style="width:160px;">
+                                <option>모델별</option>
+                                <option>모델</option>
+                            </select>-->
+
+                            <div class="select_custum" style="width:160px;">
+                                <button type="button">모델별</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">모델별</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">모델</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="text mgl20">조회기간<span class="mgl10">2019-03-06 ~ 2019-19-02</span></div>
+                        </div>
+                        <div class="right">
+                            <button class="btn_toggle" type="button" data-target="table_period" data-on="true">내용접기</button>
+                        </div>
+                    </div>
+
+                    <!--12개월-->
+                    <div class="table_period">
+                        <table>
+                            <colgroup>
+                                <col width="160px" />
+
+                                <!--가변-->
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <!--//가변-->
+
+                                <col width="80px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="brln" scope="row" rowspan="2" style="border-bottom-color:#ddd;">구분</th>
+                                    
+                                    <!--가변-->
+                                    <th scope="row" colspan="4">19년</th>
+                                    <th scope="row" colspan="8">20년</th>
+                                    <!--//가변-->
+
+                                    <th scope="row" rowspan="2" style="border-bottom-color:#ddd;">합<br/><em class="mgt5">(건수)</em></th>
+                                </tr>
+                                <tr>
+                                    <!--가변-->
+                                    <th scope="row" class="item start">9월</th>
+                                    <th scope="row" class="item">10월</th>
+                                    <th scope="row" class="item">11월</th>
+                                    <th scope="row" class="item end">12월</th>
+
+                                    <th scope="row" class="item start">1월</th>
+                                    <th scope="row" class="item">2월</th>
+                                    <th scope="row" class="item">3월</th>
+                                    <th scope="row" class="item">4월</th>
+                                    <th scope="row" class="item">5월</th>
+                                    <th scope="row" class="item">6월</th>
+                                    <th scope="row" class="item">7월</th>
+                                    <th scope="row" class="item end">8월</th>
+                                    <!--//가변-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="color brln">AP-1515D</td>
+
+                                    <!--가변-->
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+                                    <!--//가변-->
+
+                                    <td class="total brln">142</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//12개월-->
+
+                    <!--24개월-->
+                    <div class="table_period">
+                        <table>
+                            <colgroup>
+                                <col width="160px" />
+
+                                <!--가변-->
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <col width="" />
+                                <!--//가변-->
+
+                                <col width="80px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="brln" scope="row" rowspan="2" style="border-bottom-color:#ddd;">구분</th>
+                                    
+                                    <!--가변-->
+                                    <th scope="row" colspan="2">18년</th>
+                                    <th scope="row" colspan="12">19년</th>
+                                    <th scope="row" colspan="10">20년</th>
+                                    <!--//가변-->
+
+                                    <th class="brrn" scope="row" rowspan="2" style="border-bottom-color:#ddd;">합<br/><em class="mgt5">(건수)</em></th>
+                                </tr>
+                                <tr>
+                                    <!--가변-->
+                                    <th scope="row" class="item start">11월</th>
+                                    <th scope="row" class="item end">12월</th>
+
+                                    <th scope="row" class="item start">1월</th>
+                                    <th scope="row" class="item">2월</th>
+                                    <th scope="row" class="item">3월</th>
+                                    <th scope="row" class="item">4월</th>
+                                    <th scope="row" class="item">5월</th>
+                                    <th scope="row" class="item">6월</th>
+                                    <th scope="row" class="item">7월</th>
+                                    <th scope="row" class="item">8월</th>
+                                    <th scope="row" class="item">9월</th>
+                                    <th scope="row" class="item">10월</th>
+                                    <th scope="row" class="item">11월</th>
+                                    <th scope="row" class="item end">12월</th>
+
+                                    <th scope="row" class="item start">1월</th>
+                                    <th scope="row" class="item">2월</th>
+                                    <th scope="row" class="item">3월</th>
+                                    <th scope="row" class="item">4월</th>
+                                    <th scope="row" class="item">5월</th>
+                                    <th scope="row" class="item">6월</th>
+                                    <th scope="row" class="item">7월</th>
+                                    <th scope="row" class="item">8월</th>
+                                    <th scope="row" class="item">9월</th>
+                                    <th scope="row" class="item end">10월</th>
+                                    <!--//가변-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="color brln">AP-1515D</td>
+
+                                    <!--가변-->
+                                    <td class="item start">15</td>
+                                    <td class="item end">17</td>
+
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+                                    <!--//가변-->
+
+                                    <td class="total brln">142</td>
+                                </tr>
+                                <tr>
+                                    <td class="color brln">AP-1515D</td>
+
+                                    <!--가변-->
+                                    <td class="item start">15</td>
+                                    <td class="item end">17</td>
+
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+
+                                    <td class="item start">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item">17</td>
+                                    <td class="item">15</td>
+                                    <td class="item end">17</td>
+                                    <!--//가변-->
+
+                                    <td class="total brln">142</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//24개월-->
+
+                </div>
+                <!--//테이블 리스트-->
+
+                <!--그래프 영역-->
+                <div class="graph_sub_w mgt20">
+                    <div class="graph_sub_in">
+                        <div style="width:1200px;height: 370px;">
+                            <img src="../image/renew/sub_gl01.png" alt="그래프" />
+                        </div>
+                    </div>
+                </div>
+                <!--//그래프 영역-->
+
+                <!--그래프 영역-->
+                <div class="graph_sub_w mgt80">
+                    <!--
+                    <select name="" id="" class="mgb20" width="160px">
+                        <option>AP-3008F</option>
+                        <option>AP-30sfsdf12F</option>
+                    </select>-->
+
+                    <div class="select_custum mgb20" style="width:160px;">
+                        <button type="button">AP-3008F</button>
+                        <input type="hidden" id="" value=""/>
+                        <div class="select_list" >
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#" data-val="1">AP-3008F</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-val="2">AP-30sfsdf12F</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph_sub_in">
+                        <div style="width:1200px;height: 370px;">
+                            <img src="../image/renew/sub_gl01.png" alt="그래프" />
+                        </div>
+                    </div>
+                </div>
+                <!--//그래프 영역-->
+
+
+            </div>
+
+			
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>

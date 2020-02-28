@@ -1,0 +1,1056 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Q-tas품질종합분석시스템::품질지표 및 품질비용(COPQ) 절감과 고객만족을 실현합니다.</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/renew/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/board.css" />
+    
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.function.js"> </script>
+    <script type="text/javascript" src="../js/jquery.form.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/insertFlash.js"></script>
+    <script type="text/javascript" src="../js/jquery.Floater.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+    
+    <!--해더, 푸터 인크루드 용js-->
+	<script type="text/javascript" src= "../css/renew/include.js"></script>
+	
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header" class="header">
+	</header>
+	<!--//해더-->
+
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="content">
+
+            <!--path-->
+            <div class="path_w">
+                <div class="inner">
+                    <ul class="clear_both">
+                        <li>
+                            <div class="home"><a href="">home</a></div>
+                        </li>
+                        <li>
+                            <div class="select_custum">
+                                <button type="button">품질종합분석시스템</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">통합품질정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">Q-Report</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">품질지표</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="5">공지사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="6">자료실</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="7">Q&A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_custum color">
+                                <button type="button">품질종합분석시스템목적</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템목적</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">품질불량분석프로세스</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">시스템 주요 기능</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">시스템 사용방법</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//path-->
+
+            <div class="sub_wrap">
+
+                <!--서브타이틀-->
+                <div class="title_w">
+                    <h2>반환분석_개선과제 집계현황</h2>
+                </div>
+                <!--//서브타이틀-->
+
+                <!--검색박스(펼침)-->
+                <div class="s_box_e_w">
+                    <form action="">
+                        <div class="s_box_e mgt60">
+                            <div class="table_form">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:185px">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">기간</th>
+                                            <td>
+                                                <div class="date_w">
+                                                    <div class="ui_date" style="width:200px;">
+                                                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                    </div>
+                                                    <span>~</span>
+                                                    <div class="ui_date" style="width:200px;">
+                                                        <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">제품군</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_00" name="family_code" value="" /><label for="family_code_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_01" name="family_code" value="4000"/><label for="family_code_01">정수기</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_02" name="family_code" value="4230"/><label for="family_code_02">비데</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_03" name="family_code" value="4006"/><label for="family_code_03">연수기</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_04" name="family_code" value="4002"/><label for="family_code_04">청정기</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_05" name="family_code" value="4010"/><label for="family_code_05">음처기</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="family_code_06" name="family_code" value="4008"/><label for="family_code_06">의류 청정기</label>
+                                                </div>
+                                                <div class="input_r mgr0">
+                                                    <input type="radio" id="family_code_07" name="family_code" value="4007"/><label for="family_code_07">기타</label>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">불량구분</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_00" name="ad_reason" value=""/><label for="radioG1_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_01" name="ad_reason" value="A"/><label for="radioG1_01">설계&frasl;검증</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_02" name="ad_reason" value="B"/><label for="radioG1_02">협력사</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_03" name="ad_reason" value="C" /><label for="radioG1_03">제조&frasl;서브</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_04" name="ad_reason" value="D" /><label for="radioG1_04">서비스</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_05" name="ad_reason" value="E" /><label for="radioG1_05">고객</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_06" name="ad_reason" value="F" /><label for="radioG1_06">공통</label>					    
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG1_07" name="ad_reason" value="G"/><label for="radioG1_07">기타</label>	
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">발생구분</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_00" name="happen_gubun" value=""/><label for="radioG2_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_01" name="happen_gubun" value="1"/><label for="radioG2_01">A&frasl;S반환</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_11" name="happen_gubun" value="11" /><label for="radioG2_11">VOC</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_02" name="happen_gubun" value="2"/><label for="radioG2_02">PL</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_03" name="happen_gubun" value="3"/><label for="radioG2_03">하나더서비스</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_04" name="happen_gubun" value="4"/><label for="radioG2_04">B&frasl;S</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_05" name="happen_gubun" value="5"/><label for="radioG2_05">Re-work</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_06" name="happen_gubun" value="6"/><label for="radioG2_06">신뢰성 분석</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_07" name="happen_gubun" value="7"/><label for="radioG2_07">설계</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_08" name="happen_gubun" value="8"/><label for="radioG2_08">입고 불량</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG2_09" name="happen_gubun" value="9"/><label for="radioG2_09">공정 불량</label>
+                                                </div>
+                                                <div class="input_r mgr0">
+                                                    <input type="radio" id="radioG2_10" name="happen_gubun" value="10"/><label for="radioG2_10">출하 불량</label>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">개선완료현황</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG3_00" name="progress" value=""/><label for="radioG3_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG3_01" name="progress" value="ING"/><label for="radioG3_01">진행중</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG3_02" name="progress" value="END"/><label for="radioG3_02">완료</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">국가명</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG4_00" name="country" value="" /><label for="radioG4_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG4_03" name="country" value="KOR" /><label for="radioG4_03">국내</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG4_01" name="country" value="ALL"/><label for="radioG4_01">해외전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG4_02" name="country" value="PART"/><label for="radioG4_02">해외 선택</label>
+                                                </div>
+
+                                                <a class="btn_col2" href="javascript:popup_country();">더보기</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">바이어명</th>
+                                            <td>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG5_00" name="buyer" value="" /><label for="radioG5_00">전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG5_01" name="buyer" value="ALL"/><label for="radioG5_01">해외바이어전체</label>
+                                                </div>
+                                                <div class="input_r">
+                                                    <input type="radio" id="radioG5_02" name="buyer" value="PART"/><label for="radioG5_02">바이어 선택</label>
+                                                </div>
+
+                                                <a class="btn_col2" href="javascript:popup_buyer();">더보기</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">모델</th>
+                                            <td>
+                                                <div class="input_t">
+                                                    <input type="text" id="model_name" title="모델 입력창" placeholder="ex) CHPI-380 CHP-241" />
+                                                    <div class="txt_caution">
+                                                        2개 이상 복수 검색 가능 (띄어쓰기 필수)
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">부품</th>
+                                            <td>
+                                                <div class="input_t">
+                                                    <input type="text" id="part_name" title="부품 입력창" />
+                                                    <div class="txt_caution">
+                                                        2개 이상 복수 검색 가능 (띄어쓰기 필수)
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">불량내용</th>
+                                            <td>
+                                                <div class="input_t">
+                                                    <input type="text" id="poor_comment" title="불량내용 입력창" />
+                                                    <div class="txt_caution">
+                                                        2개 이상 복수 검색 가능 (띄어쓰기 필수)
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                            </div> 
+                        </div>
+                        <div class="btn_w mgt30">
+                            <button class="btn_col0 rnd" type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//검색박스(펼침)-->
+                
+                <!--검색박스(기본)-->
+                <div class="s_box_m_w">
+                    <form action="">
+                        <div class="s_box_m mgt60">                    
+                            <ul class="s_box_in">
+                                <li>
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">구분(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">구분(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">구분</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">제품군(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">제품군(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">제품군</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">바코드(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">바코드(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">바코드</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_t">
+                                        <label for="txtQaName">품질 PM</label>
+                                        <input id="txtQaName" title="품질PM" type="text" runat="server" style="width:200px;" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_t">
+                                        <label for="txtAdName">개선 PM</label>
+                                        <input id="txtAdName" title="개선PM" type="text" runat="server" style="width:200px;" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="s_box_in">
+                                <li>
+                                    <div class="date_w">
+                                        <div class="ui_date">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                        <span>~</span>
+                                        <div class="ui_date">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_t">
+                                        <label for="txtMaktx">모델명</label>
+                                        <input id="txtMaktx" title="모델명" type="text" runat="server" style="width: 234px;" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select_custum" style="width:185px;">
+                                        <button type="button">유형(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">유형(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">유형2</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:185px;">
+                                        <button type="button">개선 방안(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">개선 방안(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">개선 방안</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:185px;">
+                                        <button type="button">진행 사항(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">진행 사항(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">진행 사항</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_w mgt30">
+                            <button class="btn_col0 rnd" type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//검색박스(기본)-->
+
+                <!--검색박스(기본2)-->
+                <div class="s_box_m_w">
+                    <form action="">
+                        <div class="s_box_m mgt60">                    
+                            <ul class="s_box_in">
+                                <li>
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">구분(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">구분(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">구분</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">제품군(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">제품군(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">제품군</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    
+                                    <div class="select_custum" style="width:220px;">
+                                        <button type="button">바코드(전체)</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list" >
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="1">바코드(전체)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">바코드</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul class="s_box_in">
+                                <li>
+                                    <div class="date_w">
+                                        <div class="ui_date">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                        <span>~</span>
+                                        <div class="ui_date">
+                                            <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_t">
+                                        <label for="txtMaktx">모델명</label>
+                                        <input id="txtMaktx" title="모델명" type="text" runat="server" style="width: 234px;" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_t">
+                                        <label for="txtMaktx">고장현상</label>
+                                        <input id="txtMaktx" title="고장현상" type="text" runat="server" style="width: 234px;" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_w mgt30">
+                            <button class="btn_col0 rnd" type="button">검색</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//검색박스(기본2)-->
+
+                <!--탭메뉴-->
+                <div class="tab_nav length02 mgt60">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>전체(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>해외(245)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_nav length03">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>전체(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>국내(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>해외(245)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_nav length04">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>품질불량분석 프로세스</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>Flow Chart</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>신호등 진도관리 조건</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>품질불량분석 프로세스</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_nav length05">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>품질불량분석 프로세스</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>Flow Chart</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>신호등 진도관리 조건</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>품질불량분석 프로세스</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>신호등 진도관리 조건</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_nav length06">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>전체보기 전체보기 전체보기(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>품질기획 품질기획 품질기획(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>입고(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>출하(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>필드(245)</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>신뢰성(245)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//탭메뉴-->
+                <!--2뎁스 탭-->
+                <div class="tab_in_nav">
+                    <ul class="clear_both">
+                        <li class="active">
+                            <a href="#"><span>공지사항</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>통합품질정보</span></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><span>품질지표</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//2뎁스 탭-->
+
+                <!--테이블 리스트-->
+                <div class="table_list_w mgt40">
+
+                    <div class="table_list">
+                        <table>
+                            <colgroup>
+                                <col width="4%" />
+                                <col width="10%" />
+                                <col width="10%" />
+                                <col width="30%" />
+                                <col width="10%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                                <col width="9%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">No</th>
+                                    <th>
+                                        <select name="" id="">
+                                            <option value="1" selected>발생일</option>
+                                            <option value="2">최신순</option>
+                                            <option value="3">과거순</option>
+                                        </select>
+                                    </th>
+                                    <th scope="row">발생국가</th>
+                                    <th scope="row">불량내용</th>
+                                    <th scope="row">불량이미지</th>
+                                    <th scope="row">제품군</th>
+                                    <th scope="row">모델명</th>
+                                    <th scope="row">부품명</th>
+                                    <th scope="row">개선현황</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>234</td>
+                                    <td>
+                                        2020.02.02
+                                    </td>
+                                    <td>
+                                        대한민국
+                                    </td>
+                                    <td class="txtl">
+                                        <a href="#" title=""class="ellipsis" style="width: 370px;">
+                                            신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크  신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
+                                            신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
+                                        </a>
+                                    </td>
+                                    <td class="pd11">
+                                        <div class="sum">
+                                            <img src="../image/renew/sum_t01.png" alt="썸네일">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        정수기
+                                    </td>
+                                    <td>
+                                        P-6300L
+                                    </td>
+                                    <td>
+                                        피팅
+                                    </td>
+                                    <td>
+                                        <div class="icon_swap01">완료</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>234</td>
+                                    <td>
+                                        2020.02.02
+                                    </td>
+                                    <td>
+                                        대한민국
+                                    </td>
+                                    <td class="txtl">
+                                        <a href="#" title=""class="ellipsis" style="width: 370px;">
+                                            신규설치하였으나 제품에 들어있던 아이스트레이
+                                        </a>
+                                    </td>
+                                    <td class="pd11">
+                                        <div class="sum">
+                                            <img src="../image/renew/sum_t01.png" alt="썸네일">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        정수기
+                                    </td>
+                                    <td>
+                                        P-6300L
+                                    </td>
+                                    <td>
+                                        피팅
+                                    </td>
+                                    <td>
+                                        <div class="icon_swap01 on">진행중</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9">
+                                        검색결과가 없습니다.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table_bottom mgt15">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="btn_w">
+                                <button class="btn_col3" type="button">실패사례 등록</button>
+                                <button class="btn_col3" type="button">엑셀 DOWN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//테이블 리스트-->
+
+                <!--테이블 리스트(공지)-->
+                <div class="table_list_w mgt40">
+                    <div class="table_list">
+                        <table>
+                            <colgroup>
+                                <col width="100px" />
+                                <col width="" />
+                                <col width="100px" />
+                                <col width="100px" />
+                                <col width="120px" />
+                                <col width="100px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">첨부</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">작성일</th>
+                                    <th scope="col">조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="color">필드</td>
+                                    <td class="txtl">
+                                        <a href="#" title="" class="ellipsis" style="width: 700px;">
+                                            신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크  신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
+                                            신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
+                                        </a>
+                                    </td>
+                                    <td><a href="#"><img src="../image/renew/icon_file.gif" alt=""></a></td>
+                                    <td>김종용</td>
+                                    <td>2020.02.02</td>
+                                    <td>234</td>
+                                </tr>
+                                <tr>
+                                    <td class="color">품질기획</td>
+                                    <td class="txtl">
+                                        <a href="#" title="" class="ellipsis" style="width: 700px;">
+                                            신규설치하였으나 제품에 들어있던 아이스트레이
+                                        </a>
+                                    </td>
+                                    <td><img src="../image/renew/icon_unfile.gif" alt=""></td>
+                                    <td>김종용</td>
+                                    <td>2020.02.02</td>
+                                    <td>234</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//테이블 리스트(공지)-->
+
+                <!--테이블 리스트(스크롤)-->
+                <div class="table_list_w mgt40">
+                    <div class="table_top mgb15">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="btn_w">
+                                <button class="btn_col3" type="button">실패사례 등록</button>
+                                <button class="btn_col3" type="button">엑셀 DOWN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_list fixed">
+                        <table>
+                            <colgroup>
+                                <col width="30px" />
+                                <col width="80px" />
+                                <col width="100px" />
+                                <col width="100px" />
+                                <col width="150px" />
+                                <col width="150px" />
+                                <col width="250px" />
+                                <col width="100px" />
+                                <col width="80px" />
+                                <col width="140px" />
+                                <col width="100px" />                
+                                <col width="100px" />
+                                <col width="100px" />
+                                <col width="100px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="input_c noTxt">
+                                            <input id="check_all" type="checkbox">
+                                            <label for="check_all"></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">분석일</th>
+                                    <th scope="col">제품군</th>
+                                    <th scope="col">모델명</th>
+                                    <th scope="col">고장 현상</th>
+                                    <th scope="col">현상 파악</th>
+                                    <th scope="col">이미지</th>
+                                    <th scope="col">첨부 파일</th>
+                                    <th scope="col">제품 바코드</th>
+                                    <th scope="col">품질 PM</th>
+                                    <th scope="col">개선 PM</th>
+                                    <th scope="col">개선 방안</th>
+                                    <th scope="col">진행 상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="input_c noTxt">
+                                            <input id="check_01" type="checkbox">
+                                            <label for="check_01"></label>
+                                        </div>
+                                    </td>
+                                    <td class="color">완료</td>
+                                    <td>2020.02.02</td>
+                                    <td>정수기</td>
+                                    <td>P-6300L</td>
+                                    <td>터치오작동</td>
+                                    <td>터치오작동</td>
+                                    <td class="pd11">
+                                        <div class="sum">
+                                            <img src="../image/renew/sum_t01.png" alt="썸네일">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="../image/renew/icon_file.gif" alt=""></a>
+                                    </td>
+                                    <td>제품 바코드</td>
+                                    <td>품질 PM</td>
+                                    <td>개선 PM</td>
+                                    <td>개선 방안</td>
+                                    <td>진행 상태</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input_c noTxt">
+                                            <input id="check_02" type="checkbox" disabled>
+                                            <label for="check_02"></label>
+                                        </div>
+                                    </td>
+                                    <td class="color">완료</td>
+                                    <td>2020.02.02</td>
+                                    <td>정수기</td>
+                                    <td>P-6300L</td>
+                                    <td>터치오작동</td>
+                                    <td>터치오작동</td>
+                                    <td class="pd11">
+                                        <div class="sum">
+                                            <img src="../image/renew/sum_t01.png" alt="썸네일">
+                                        </div>
+                                    </td>
+                                    <td><img src="../image/renew/icon_unfile.gif" alt=""></td>
+                                    <td>제품 바코드</td>
+                                    <td>품질 PM</td>
+                                    <td>개선 PM</td>
+                                    <td>개선 방안</td>
+                                    <td>진행 상태</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="14">검색결과가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//테이블 리스트-->
+
+
+                <!--페이징-->
+                <div class="paging_w mgt40">
+                    <div class="paging_in">
+                        <div class="prev_w">
+                            <div class="first"><a href="">first</a></div>
+                            <div class="prev"><a href="">prev</a></div>
+                        </div>
+                        <ul class="paging_list">
+                            <li><b>1</b></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                        </ul>
+                        <div class="next_w">
+                            <div class="next"><a href="">next</a></div>
+                            <div class="last"><a href="">last</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--//페이징-->
+
+                <!--검색박스(하단)-->
+                <div class="s_box_b_w mgt40">
+                    <form action="">
+                        <div class="s_box_b">
+                            
+                            <div class="select_custum h50" style="width:170px;">
+                                <button type="button">전체</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">전체</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">제목</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">내용</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_s mgl10" style="width: 590px;">
+                                <input type="text" placeholder="검색어를 입력해주세요." />
+                                <button type="button">검색</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--//검색박스(하단)-->
+
+            </div>
+
+			
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>

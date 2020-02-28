@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Q-tas품질종합분석시스템::품질지표 및 품질비용(COPQ) 절감과 고객만족을 실현합니다.</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/renew/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/board.css" />
+    
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.function.js"> </script>
+    <script type="text/javascript" src="../js/jquery.form.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/insertFlash.js"></script>
+    <script type="text/javascript" src="../js/jquery.Floater.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+    
+    <!--해더, 푸터 인크루드 용js-->
+	<script type="text/javascript" src= "../css/renew/include.js"></script>
+	
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header" class="header">
+	</header>
+	<!--//해더-->
+
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="content">
+
+            <!--path-->
+            <div class="path_w">
+                <div class="inner">
+                    <ul class="clear_both">
+                        <li>
+                            <div class="home"><a href="">home</a></div>
+                        </li>
+                        <li>
+                            <div class="select_custum">
+                                <button type="button">품질종합분석시스템</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">통합품질정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">Q-Report</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">품질지표</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="5">공지사항</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="6">자료실</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="7">Q&A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_custum color">
+                                <button type="button">품질종합분석시스템목적</button>
+                                <input type="hidden" id="" value=""/>
+                                <div class="select_list" >
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="#" data-val="1">품질종합분석시스템목적</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="2">품질불량분석프로세스</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="3">시스템 주요 기능</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-val="4">시스템 사용방법</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//path-->
+
+            <div class="sub_wrap">
+
+                <!--서브타이틀-->
+                <div class="title_w">
+                    <h2>실패사례 Factory</h2>
+                </div>
+                <!--//서브타이틀-->
+
+                <!--테이블 폼-->
+                <div class="table_form_w mgt35">
+                    <form action="">
+
+                        <div class="table_form">
+                            <table>
+                                <colgroup>
+                                    <col style="width:155px">
+                                    <col style="width:495px">
+                                    <col style="width:155px">
+                                    <col style="width:495px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">제목</th>
+                                        <td>
+                                            <div class="input_t">
+                                                <input id="txtTitle" type="text" runat="server" maxlength="100" />
+                                            </div>
+                                        </td>
+                                        <th scope="row">품질PM(등록자)</th>
+                                        <td>품질경영팀 <span class="color">서현종</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">발행일</th>
+                                        <td>
+                                            <div class="ui_date" style="width:200px;">
+                                                <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                            </div>
+                                        </td>
+                                        <th scope="row">제품군</th>
+                                        <td>
+                                            <!--
+                                            <select id="selGoodsType" class="selGoodsType" runat="server" style="width: 100%;">
+                                                <option value="" selected>제품군을 선택하세요.</option>
+                                                <option value="4000">정수기</option>
+                                                <option value="4230">비데</option>
+                                                <option value="4006">연수기</option>
+                                                <option value="4002">청정기</option>
+                                                <option value="4010">음처기</option>
+                                                <option value="4008">의류 청정기</option>
+                                                <option value="4007">기타</option>
+                                            </select>-->
+
+                                            <div class="select_custum" style="width:100%;">
+                                                <button type="button">제품군을 선택하세요.</button>
+                                                <input type="hidden" id="" value=""/>
+                                                <div class="select_list" >
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" data-val="4000">정수기</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4230">비데</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4006">연수기</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4002">청정기</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4010">음처기</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4008">의류 청정기</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4007">기타</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">모델명</th>
+                                        <td>
+                                            <button type="button" class="btn_col5">검색</button>
+                                        </td>
+                                        <th scope="row">고장부위 상세(부품명)</th>
+                                        <td>
+                                            <button type="button" class="btn_col5">검색</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제품 바코드</th>
+                                        <td>
+                                            <div class="input_t">
+                                                <input id="txtBarCode" type="text" runat="server" maxlength="50"  />
+                                            </div>
+                                        </td>
+                                        <th scope="row">사용일</th>
+                                        <td>
+                                            <div class="input_t">
+                                                <input id="txtUseDay" type="text" runat="server" maxlength="5" imeMode="disabled" onkeypress="onlyNumber();" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">발생 구분</th>
+                                        <td>
+                                            <!--
+                                            <select id="selHappenType" class="selFamilyCode" runat="server" style="width: 100%;">
+                                                <option value="" selected>발생 구분을 선택하세요.</option>
+                                                <option value="1">AS/반환</option>
+                                                <option value="11">VOC</option>
+                                                <option value="2">PL</option>
+                                                <option value="3">하나 더 서비스</option>
+                                                <option value="4">B/S</option>
+                                                <option value="5">Re-work</option>
+                                                <option value="6">신뢰성 분석</option>
+                                                <option value="7">설계</option>
+                                                <option value="8">입고 불량</option>
+                                                <option value="9">공정 불량</option>
+                                                <option value="10">출하 불량</option>
+                                            </select>-->
+
+                                            <div class="select_custum" style="width:100%;">
+                                                <button type="button">발생 구분을 선택하세요.</button>
+                                                <input type="hidden" id="" value=""/>
+                                                <div class="select_list" >
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" data-val="1">AS/반환</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="11">VOC</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="2">PL</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="3">하나 더 서비스</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="4">B/S</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="5">Re-work</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="6">신뢰성 분석</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="7">설계</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="8">입고 불량</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="9">공정 불량</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="10">출하 불량</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </td>
+                                        <th scope="row">불량 구분</th>
+                                        <td>
+                                            <!--
+                                            <select id="selBadType" class="selBadType" runat="server" style="width: 100%;">
+                                                <option value="">불량 구분을 선택하세요.</option>
+                                                <option value="A">설계/검증</option>
+                                                <option value="B">협력사</option>
+                                                <option value="C">제조/서브</option>
+                                                <option value="D">서비스</option>
+                                                <option value="E">고객</option>
+                                                <option value="F">공통</option>
+                                                <option value="G">기타</option>
+                                            </select>
+                                            -->
+
+                                            <div class="select_custum" style="width:100%;">
+                                                <button type="button">불량 구분을 선택하세요.</button>
+                                                <input type="hidden" id="" value=""/>
+                                                <div class="select_list" >
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" data-val="A">설계/검증</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="B">협력사</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="C">제조/서브</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="D">서비스</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="E">고객</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="F">공통</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-val="G">기타</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table_form">
+                            <table>
+                                <colgroup>
+                                    <col style="width:155px">
+                                    <col style="width:155px">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="3" class="ranking">현상파악</th>
+                                        <th scope="row">확인사항</th>
+                                        <td>
+                                            <textarea class="" cols="10" rows="3">가나다라 마바사</textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이미지</th>
+                                        <td>
+                                            <div class="form_img">
+                                                <ul class="clear_both">
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img01">
+                                                            <label for="file_img01">파일선택</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img02">
+                                                            <label for="file_img02">파일선택</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <!--이미지 업로드시-->
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <!--
+                                                            <input type="file" id="file01">
+                                                            <label class="" for="file01">파일선택</label>-->
+                                                            <div class="show_img">
+                                                                <img src="../image/renew/sum_t02.png" alt="sum"/>
+                                                                <button type="button" class="btn_close01">닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--//이미지 업로드시-->
+
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">첨부파일</th>
+                                        <td>
+                                            <div class="form_file">
+                                                <ul>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file01">
+                                                            <label class="btn_col5 mgl10" for="file01">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_add mgl10" type="button">추가</button>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file02">
+                                                            <label class="btn_col5 mgl10" for="file02">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_remove mgl10" type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table_form">
+                            <table>
+                                <colgroup>
+                                    <col style="width:155px">
+                                    <col style="width:155px">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="4" class="ranking">원인분석</th>
+                                        <th scope="row">개선 PM</th>
+                                        <td>
+                                            <button type="button" class="btn_col5">검색</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">확인사항</th>
+                                        <td>
+                                            <textarea class="" cols="10" rows="3">가나다라 마바사</textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이미지</th>
+                                        <td>
+                                            <div class="form_img">
+                                                <ul class="clear_both">
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img01">
+                                                            <label for="file_img01">파일선택</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img02">
+                                                            <label for="file_img02">파일선택</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <!--이미지 업로드시-->
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <!--
+                                                            <input type="file" id="file01">
+                                                            <label class="" for="file01">파일선택</label>-->
+                                                            <div class="show_img">
+                                                                <img src="../image/renew/sum_t03.png" alt="sum"/>
+                                                                <button type="button" class="btn_close01">닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--//이미지 업로드시-->
+
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">첨부파일</th>
+                                        <td>
+                                            <div class="form_file">
+                                                <ul>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file03">
+                                                            <label class="btn_col5 mgl10" for="file03">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_add mgl10" type="button">추가</button>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file04">
+                                                            <label class="btn_col5 mgl10" for="file04">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_remove mgl10" type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table_form">
+                            <table>
+                                <colgroup>
+                                    <col style="width:155px">
+                                    <col style="width:155px">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="6" class="ranking">근본대책</th>
+                                        <th scope="row">대책</th>
+                                        <td>
+                                            <textarea class="" cols="10" rows="3">가나다라 마바사</textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이미지</th>
+                                        <td>
+                                            <div class="form_img">
+                                                <ul class="clear_both">
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img01">
+                                                            <label for="file_img01">파일선택</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img02">
+                                                            <label for="file_img02">파일선택</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <!--이미지 업로드시-->
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <!--
+                                                            <input type="file" id="file01">
+                                                            <label class="" for="file01">파일선택</label>-->
+                                                            <div class="show_img">
+                                                                <img src="../image/renew/sum_t02.png" alt="sum"/>
+                                                                <button type="button" class="btn_close01">닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--//이미지 업로드시-->
+
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">첨부파일</th>
+                                        <td>
+                                            <div class="form_file">
+                                                <ul>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file05">
+                                                            <label class="btn_col5 mgl10" for="file05">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_add mgl10" type="button">추가</button>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file06">
+                                                            <label class="btn_col5 mgl10" for="file06">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_remove mgl10" type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">AS지침</th>
+                                        <td>
+                                            <div class="form_file">
+                                                <ul>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file07">
+                                                            <label class="btn_col5 mgl10" for="file07">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_add mgl10" type="button">추가</button>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file08">
+                                                            <label class="btn_col5 mgl10" for="file08">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_remove mgl10" type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ECO번호</th>
+                                        <td>
+                                            <div class="input_t">
+                                                <input id="txtEcoNo" type="text" runat="server" maxlength="50" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">적용일자</th>
+                                        <td>
+                                            <div class="ui_date" style="width:200px;">
+                                                <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table_form">
+                            <table>
+                                <colgroup>
+                                    <col style="width:155px">
+                                    <col style="width:155px">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" rowspan="3" class="ranking">비고</th>
+                                        <th scope="row">TEXT</th>
+                                        <td>
+                                            <textarea class="" cols="10" rows="3">가나다라 마바사</textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이미지</th>
+                                        <td>
+                                            <div class="form_img">
+                                                <ul class="clear_both">
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img01">
+                                                            <label for="file_img01">파일선택</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <input type="file" id="file_img02">
+                                                            <label for="file_img02">파일선택</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <!--이미지 업로드시-->
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <!--
+                                                            <input type="file" id="file01">
+                                                            <label class="" for="file01">파일선택</label>-->
+                                                            <div class="show_img">
+                                                                <img src="../image/renew/sum_t02.png" alt="sum"/>
+                                                                <button type="button" class="btn_close01">닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!--//이미지 업로드시-->
+
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">첨부파일</th>
+                                        <td>
+                                            <div class="form_file">
+                                                <ul>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file09">
+                                                            <label class="btn_col5 mgl10" for="file09">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_add mgl10" type="button">추가</button>
+                                                    </li>
+                                                    <li>
+                                                        <div class="btn_file">
+                                                            <div class="text" style="width: 780px;">
+                                                                <div></div>
+                                                                <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                                            </div>
+                                                            <input type="file" id="file10">
+                                                            <label class="btn_col5 mgl10" for="file10">파일선택</label>
+                                                        </div>
+                                                        <button class="btn_remove mgl10" type="button">삭제</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="btn_w mgt50 ml20">
+                            <button class="btn_col1 rnd" type="button">확인</button>
+                            <button class="btn_col1 gray rnd" type="button">취소</button>
+                        </div>
+
+                        <div class="btn_w txtr">
+                            <button class="btn_col3" type="button">목록보기</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--//테이블 폼-->
+
+
+
+            </div>
+
+			
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>

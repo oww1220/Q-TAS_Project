@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Q-tas품질종합분석시스템::품질지표 및 품질비용(COPQ) 절감과 고객만족을 실현합니다.</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/renew/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/renew/board.css" />
+    
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.function.js"> </script>
+    <script type="text/javascript" src="../js/jquery.form.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/insertFlash.js"></script>
+    <script type="text/javascript" src="../js/jquery.Floater.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+
+    
+    <!--해더, 푸터 인크루드 용js-->
+	<script type="text/javascript" src= "../css/renew/include.js"></script>
+	
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header" class="header">
+	</header>
+	<!--//해더-->
+
+    <style>
+        /* 페이지 가이드 전용 ================================================== */
+        .article_pg_guide {margin-bottom:50px; border:1px solid #CCC;width: 980px;margin: 50px auto 0;}
+        .article_pg_guide > h3 {margin-bottom:10px; padding:10px; border-bottom:1px solid #999; font-size:15px; color:#FFF; background:#555;}
+        .article_pg_guide > .inner {margin-bottom:5px; padding:10px;}
+        .article_pg_guide > .inner.bg {background-color:#EEE;}
+        .article_pg_guide > .inner > h4 {margin:10px 0; padding:10px; border-bottom:1px solid #555; font-size:15px;}
+        .article_pg_guide > .inner > p {margin:20px 0 10px 0; font-size:12px;}
+    </style>
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="content">
+
+            
+
+            <div class="sub_wrap">
+
+
+                <div class="article_pg_guide">
+                    <h3>텍스트 : icon</h3>
+                    <div class="inner">
+                        <div class="icon_swap01">완료</div>
+                        <div class="icon_swap01 on">진행중</div>
+                        <div class="icon_num">1</div>
+                    </div>
+                </div>
+
+                <div class="article_pg_guide">
+                    <h3>텍스트 : button</h3>
+                    <div class="inner">
+                        <button class="btn_col0 rnd" type="button">검색</button>
+                        
+                        <button class="btn_col1 rnd" type="button">확인</button>
+                        <button class="btn_col1 gray rnd" type="button">취소</button>
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <button class="btn_col3" type="button">실패사례 등록</button>
+
+                        <button class="btn_col4" type="button">검색</button>
+
+                        <button class="btn_col4 active" type="button">검색</button>
+                        <a class="btn_col2" href="javascript:popup_buyer();">더보기</a>
+
+
+                        
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <button class="btn_l_col1 rnd" type="button">확인</button>
+                        <button class="btn_l_col1 gray rnd" type="button">취소</button>
+
+                        <button class="btn_col5" type="button">검색</button>
+                        <button type="button" class="btn_col5 widthA">가변버튼 가변버튼</button>
+
+                        <button class="btn_add" type="button">추가</button>
+
+                        <button class="btn_remove" type="button">삭제</button>
+
+                        <button class="btn_delete" type="button">제거</button>
+
+                        <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" onclick="DeleteOrgan('QA');"></button>
+
+                        <button type="button" class="btn_close01">닫기</button>
+
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <button type="button" class="btn_close02">지역지도 닫기</button>
+                        <button type="button" class="btn_close03" >툴팁 닫기</button>
+
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <button id="test01" class="btn_col1 widthA"  type="button">VOC_개선진도관리 현황 상세 2단레이어</button>
+                        <button type="button" class="btn_col6">수정</button>
+                        <button type="button" class="btn_col6 widthA">실패사례 등록</button>
+                        <button class="btn_col7 widthA active" type="button">전체</button>
+                        <button class="btn_col7 widthA" type="button">정수기</button>
+                        <button class="btn_col8 active" type="button">ㄱ</button>
+                        <button class="btn_col8" type="button">ㄴ</button>
+
+                        <br>
+                        <br>
+                        <br>
+
+                        
+
+                        <div class="form_file">
+                            <ul>
+                                <li>
+                                    <div class="btn_file">
+                                        <div class="text" style="width: 300px;">
+                                            <div></div>
+                                            <button type="button" class="btn_img"><img src="../image/board/btn_attach_delete.gif" alt="닫기"></button>
+                                        </div>
+                                        <input type="file" id="file09">
+                                        <label class="btn_col5 mgl10" for="file09">파일선택</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="article_pg_guide">
+                    <h3>인풋</h3>
+                    <div class="inner">
+
+                        <div class="input_t"style="width: 127px;">
+                            <input type="text" id="txtStep1DateOff" runat="server">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_t"style="width: 127px;">
+                            <input class="h26" type="text" id="txtStep1DateOff" runat="server">
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="input_t"style="width: 127px;">
+                            <input type="text" id="txtStep1DateOff" runat="server" disabled="disabled">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_t">
+                            <input type="text" id="part_name" title="부품 입력창">
+                            <div class="txt_caution">
+                                2개 이상 복수 검색 가능 (띄어쓰기 필수)
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="input_t" style="width: 127px;">
+                            <input type="text" id="txtStep1DateOff" runat="server">
+                            <button type="button" class="btn_img" onclick="$(this).parent().find('input').val('')"><img src="../image/board/btn_attach_delete.gif"></button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_t" style="width: 127px;">
+                            <input class="h26" type="text" id="txtStep1DateOff" runat="server">
+                            <button type="button" class="btn_img" onclick="$(this).parent().find('input').val('')"><img src="../image/board/btn_attach_delete.gif"></button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_t" style="width: 282px;">
+                            <label for="txtMaktx">모델명</label>
+                            <input id="txtMaktx" title="모델명" type="text" runat="server" style="width: 234px;">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_t" style="width:240px;">
+                            <label for="txtEcoNo">ECO 번호</label>
+                            <input class="h26" id="txtEcoNo" title="품질PM" type="text" runat="server" style="width:175px;">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="date_w">
+                            <div class="ui_date" style="width:200px;">
+                                <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                            </div>
+                            <span>~</span>
+                            <div class="ui_date" style="width:200px;">
+                                <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <select id="selImproveCode2" runat="server" style="width:185px;">
+                            <option value="">개선 방안(선택)</option>
+                            <option value="A">설계/검증</option>
+                            <option value="B">협력사</option>
+                            <option value="C">제조/서브</option>
+                            <option value="D">서비스</option>
+                            <option value="E">고객</option>
+                            <option value="F">공통</option>
+                            <option value="G">기타</option>
+                        </select>
+                        <br>
+                        <br>
+                        <select class="h26" id="selImproveCode" runat="server" style="width:185px;">
+                            <option value="">개선 방안(선택)</option>
+                            <option value="A">설계/검증</option>
+                            <option value="B">협력사</option>
+                            <option value="C">제조/서브</option>
+                            <option value="D">서비스</option>
+                            <option value="E">고객</option>
+                            <option value="F">공통</option>
+                            <option value="G">기타</option>
+                        </select>
+                        <br>
+                        <br>
+                        <select class="h30" name="" id="" style="width: 110px;">
+                            <option value="">담당</option>
+                            <option value="">담당</option>
+                            <option value="">담당</option>
+                        </select>
+                        <br>
+                        <br>
+                        <div class="sort_select color">
+                            <select name="" id="">
+                                <option class="bestSubCate1" data-name="품질종합분석시스템" value="1">품질종합분석시스템</option>
+                                <option class="bestSubCate2" data-name="통합품질정보" value="2">통합품질정보</option>
+                                <option class="bestSubCate3" data-name="Q-Report" value="3">Q-Report</option>
+                                <option class="bestSubCate4" data-name="품질지표" value="4">품질지표</option>
+                                <option class="bestSubCate5" data-name="공지사항" value="5">공지사항</option>
+                                <option class="bestSubCate6" data-name="자료실" value="6">자료실</option>
+                                <option class="bestSubCate7" data-name="Q&amp;A" value="7">Q&amp;A</option>
+                            </select>
+                            <div class="selText" data-name="품질종합분석시스템">품질종합분석시스템</div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="select_custum" style="width:160px;">
+                            <button type="button">모델별</button>
+                            <input type="hidden" id="" value=""/>
+                            <div class="select_list" >
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-val="1">모델별</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="2">모델</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="1">모델별</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="2">모델</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="1">모델별</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="2">모델</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="1">모델별</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-val="2">모델</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_s" style="width: 590px;">
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <button type="button">검색</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_r">
+                            <input type="radio" id="radioG3_00" name="progress" value=""><label for="radioG3_00">전체</label>
+                        </div>
+                        <div class="input_r">
+                            <input type="radio" id="radioG3_01" name="progress" value="ING"><label for="radioG3_01">진행중</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input_c noTxt">
+                            <input id="check_all" type="checkbox">
+                            <label for="check_all"></label>
+                        </div>
+                        <div class="input_c noTxt">
+                            <input id="check_02" type="checkbox" disabled="">
+                            <label for="check_02"></label>
+                        </div>
+                        <br>
+                        <div class="input_c">
+                            <input id="check_all2" type="checkbox">
+                            <label for="check_all2">전체 선택</label>
+                        </div>
+
+                        <div class="check_list">
+                            <ul class="clear_both">
+                                <li>
+                                    <input id="check_01" type="checkbox">
+                                    <label for="check_01">서현종</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <textarea cols="10" rows="3">가나다라 마바사</textarea>
+                        <br>
+                        <br>
+                        <textarea cols="10" rows="3" disabled="disabled"></textarea>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+			
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>
