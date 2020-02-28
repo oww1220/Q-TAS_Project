@@ -41,8 +41,8 @@
 			<!--메인-->
 			<div class="main_tab">
 				<ul>
-					<li class="active"><a href="">VOC</a></li>
-					<li><a href="">AS/교환</a></li>
+					<li><a href="">VOC</a></li>
+					<li class="active"><a href="">AS/교환</a></li>
 				</ul>
 			</div>
 			<div class="main_wrap">
@@ -54,7 +54,7 @@
 						<div class="voc_w">
 							<div class="voc_in">
 								<h4>
-									VOC 현황</br>
+									AS/교환 현황</br>
 									20년 누적
 								</h4>
 								<ul>
@@ -63,37 +63,20 @@
 										<div><b>682</b><span>건</span></div>
 									</li>
 									<li>
-										<strong>과제현황</strong>
+										<strong>AS 제품불량</strong>
 										<div><b>682</b><span>건</span></div>
 									</li>
 									<li>
-										<strong>처리율</strong>
-										<div class="small"><b>150</b><span>건</span></div>
-										<div><b>95</b><span>%</span></div>
+										<strong>교환</strong>
+										<div><b>682</b><span>건</span></div>
+									</li>
+									<li>
+										<strong>고객요청/감성</strong>
+										<div><b>682</b><span>건</span></div>
 									</li>
 								</ul>
 							</div>
-							<div class="voc_in">
-								<h4>
-									VOC 현황</br>
-									1월 현재
-								</h4>
-								<ul>
-									<li>
-										<strong>접수현황</strong>
-										<div><b>682</b><span>건</span></div>
-									</li>
-									<li>
-										<strong>과제현황</strong>
-										<div><b>682</b><span>건</span></div>
-									</li>
-									<li>
-										<strong>처리율</strong>
-										<div class="small"><b>150</b><span>건</span></div>
-										<div><b>95</b><span>%</span></div>
-									</li>
-								</ul>
-							</div>
+							
 						</div>
 						<!--//누적현황-->
 					</div>
@@ -102,13 +85,13 @@
 						<!--월별 접수/처리 현황-->
 						<div class="col_box">
 							<div class="month_w">
-								<h2>월별 개선과제 처리율</h2>
+								<h2>월별 AS 현황</h2>
 								<div class="col_top">
 									<div class="glaph_guide">
 										<ul>
-											<li><strong style="background-color: #cacacc;"></strong><span>접수</span></li>
-											<li><strong style="background-color: #f86d8e;"></strong><span>완료</span></li>
-											<li><strong style="background-color: #045690;"></strong><span>완료율</span></li>
+											<li><strong style="background-color: #cacacc;"></strong><span>AS_제품불량</span></li>
+											<li><strong style="background-color: #f86d8e;"></strong><span>교환</span></li>
+											<li><strong style="background-color: #045690;"></strong><span>고객요청/감성</span></li>
 										</ul>
 									</div>
 									<!--
@@ -145,13 +128,29 @@
 						</div>
 						<!--//월별 접수/처리 현황-->
 
-						<!--신제품 VOC 현황-->
+						<!--신제품 현황-->
 						<div class="col_box">
 							<div class="new_w">
-								<h2>신제품 VOC 현황</h2>
+								<h2>신제품 현황</h2>
 								<div class="col_top">
 									
 
+									<div class="select_custum h30 mgl10" style="width:110px;">
+										<button type="button">모델군</button>
+										<input type="hidden" id="" value=""/>
+										<div class="select_list" >
+											<div>
+												<ul>
+													<li>
+														<a href="#" data-val="1">모델군1</a>
+													</li>
+													<li>
+														<a href="#" data-val="2">모델군2</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
 									<div class="select_custum h30 mgl10" style="width:110px;">
 										<button type="button">모델명</button>
 										<input type="hidden" id="" value=""/>
@@ -163,22 +162,6 @@
 													</li>
 													<li>
 														<a href="#" data-val="2">모델명2</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="select_custum h30 mgl10" style="width:110px;">
-										<button type="button">진행상태</button>
-										<input type="hidden" id="" value=""/>
-										<div class="select_list" >
-											<div>
-												<ul>
-													<li>
-														<a href="#" data-val="1">진행상태1</a>
-													</li>
-													<li>
-														<a href="#" data-val="2">진행상태2</a>
 													</li>
 												</ul>
 											</div>
@@ -200,8 +183,8 @@
 												<th>순위</th>
 												<th>모델명</th>
 												<th>현상</th>
-												<th>접수건</th>
-												<th>진행사항</th>
+												<th>제품불량</th>
+												<th>교환</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -210,35 +193,35 @@
 												<td class="color">CP-7200N</td>
 												<td class="txtl bold">수위센서 감지불량 현상 확인</td>
 												<td>15</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>2</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">필터누수</td>
 												<td>13</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>3</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">터치오작동</td>
 												<td>10</td>
-												<td><div class="icon_swap01 on">진행중</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>4</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">아이스트레이 이탈</td>
 												<td>8</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>5</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">메인탱크 누수</td>
 												<td>1</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 										</tbody>
 
@@ -257,12 +240,12 @@
 								</div>
 							</div>
 						</div>
-						<!--//신제품 VOC 현황-->
+						<!--//신제품 현황-->
 
-						<!--양산품 VOC 현황-->
+						<!--양산품 현황-->
 						<div class="col_box">
 							<div class="new_w">
-								<h2>양산품 VOC 현황</h2>
+								<h2>양산품 현황</h2>
 								<div class="col_top">
 									<!--
 									<select class="h30 mgl10" name="" id="" style="width: 110px;">
@@ -281,16 +264,16 @@
 										<option value="">진행상태</option>
 									</select>-->
 									<div class="select_custum h30 mgl10" style="width:110px;">
-										<button type="button">제품군</button>
+										<button type="button">모델군</button>
 										<input type="hidden" id="" value=""/>
 										<div class="select_list" >
 											<div>
 												<ul>
 													<li>
-														<a href="#" data-val="1">제품군1</a>
+														<a href="#" data-val="1">모델군1</a>
 													</li>
 													<li>
-														<a href="#" data-val="2">제품군2</a>
+														<a href="#" data-val="2">모델군2</a>
 													</li>
 												</ul>
 											</div>
@@ -312,22 +295,6 @@
 											</div>
 										</div>
 									</div>
-									<div class="select_custum h30 mgl10" style="width:110px;">
-										<button type="button">진행상태</button>
-										<input type="hidden" id="" value=""/>
-										<div class="select_list" >
-											<div>
-												<ul>
-													<li>
-														<a href="#" data-val="1">진행상태1</a>
-													</li>
-													<li>
-														<a href="#" data-val="2">진행상태2</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
 								</div>
 								<div class="new_in">
 									<table>
@@ -343,8 +310,8 @@
 												<th>순위</th>
 												<th>모델명</th>
 												<th>현상</th>
-												<th>접수건</th>
-												<th>진행사항</th>
+												<th>제품불량</th>
+												<th>교환</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -353,35 +320,35 @@
 												<td class="color">CP-7200N</td>
 												<td class="txtl bold">수위센서 감지불량 현상 확인</td>
 												<td>15</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>2</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">필터누수</td>
 												<td>13</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>3</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">터치오작동</td>
 												<td>10</td>
-												<td><div class="icon_swap01 on">진행중</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>4</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">아이스트레이 이탈</td>
 												<td>8</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 											<tr>
 												<td>5</td>
 												<td class="color">CP-6310</td>
 												<td class="txtl bold">메인탱크 누수</td>
 												<td>1</td>
-												<td><div class="icon_swap01">완료</div></td>
+												<td>5</td>
 											</tr>
 										</tbody>
 
@@ -400,15 +367,15 @@
 								</div>
 							</div>
 						</div>
-						<!--//양산품 VOC 현황-->
+						<!--//양산품 현황-->
 					</div>
 
 					<div class="left">
 
-						<!--월별 VOC 이슈-->
+						<!--월별이슈-->
 						<div class="col_box">
 							<div class="issue_w">
-								<h2>월별 VOC 이슈</h2>
+								<h2>월별이슈</h2>
 								<div class="col_top">
 									<!--
 									<select class="h30 mgl10" name="" id="" style="width: 110px;">
@@ -492,7 +459,7 @@
 								</div>
 							</div>
 						</div>
-						<!--//월별 VOC 이슈-->
+						<!--//월별이슈-->
 
 
 						<!--지역별 접수 현황-->
@@ -670,35 +637,46 @@
 														<col width="50px">
 														<col width="auto">
 														<col width="50px">
+														<col width="50px">
+														<col width="50px">
 													</colgroup>
 													<thead>
 														<tr>
 															<th>순위</th>
-															<th>현상</th>
-															<th>접수건</th>
+															<th>모델</th>
+															<th>AS</th>
+															<th>불량</th>
+															<th>교환</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<td><div class="icon_num">1</div></td>
-															<td class="txtl bold">CHP-7290L_냉각부_터치오작동</td>
-															<td class="color">3건</td>
+															<td class="color">CP-7200N</td>
+															<td>250</td>
+															<td>15</td>
+															<td>5</td>
 														</tr>
 														<tr>
 															<td><div class="icon_num">2</div></td>
-															<td class="txtl bold">CHP-570L_냉각부_냉매유출</td>
-															<td class="color">3건</td>
+															<td class="color">CP-7200N</td>
+															<td>250</td>
+															<td>15</td>
+															<td>5</td>
 														</tr>
 														<tr>
 															<td><div class="icon_num">3</div></td>
-															<td class="txtl bold">CHP-631L_이지피팅 누수</td>
-															<td class="color">3건</td>
+															<td class="color">CP-7200N</td>
+															<td>250</td>
+															<td>15</td>
+															<td>5</td>
 														</tr>
 														
 													</tbody>
 			
 												</table>
 
+												
 												<button class="tooltip_close btn_close03" type="button">툴팁 닫기</button>
 											</div>
 										</div>
