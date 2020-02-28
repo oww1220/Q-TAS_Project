@@ -114,7 +114,7 @@ caption {position:static;}
 hr {display:none;}
 
 /* form */
-input, select, button {vertical-align:middle; appearance:none; -webkit-appearance:none; -moz-appearance:none;}
+input, select, button {vertical-align:middle; appearance:none; -webkit-appearance:none; -moz-appearance:none;font-family:"NotoR";}
 input::-ms-clear {display:none;}
 input[type="text"]:disabled,
 input[type="text"].ty2:disabled,
@@ -158,7 +158,7 @@ button > * {position:relative;} /* 클릭시 문자 흔들림 방지(ie) */
 ::-webkit-file-upload-button {cursor:pointer;}
 
 
-textarea {width:100%; line-height:1.5; box-sizing:border-box; padding:13px 18px; border:1px solid #DDD; resize:none; font-size:14px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px;}
+textarea {width:100%; line-height:1.5; box-sizing:border-box; padding:13px 18px; border:1px solid #DDD; resize:none; font-size:14px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px;font-family:"NotoR";}
 textarea:disabled{background:#EFEFEF; color:#666;}
 textarea.ty2 {background-color:#F8F8F8; border-color:#DDD;}
 textarea.ty3 {background-color:#F8F8F8; border-color:transparent;}

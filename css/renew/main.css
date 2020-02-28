@@ -63,10 +63,11 @@
 
 
 .main_wrap .map_w {width: 507px;height: 706px;padding:20px 0;margin-top:20px;position: relative;}
-.main_wrap .map_w h2 {margin-left: 20px;}
+.main_wrap .map_w h2 {margin-left: 20px;font-size: 26px;}
 .main_wrap .map_w .map_cont {width:504px;height: 559px;}
 .main_wrap .map_w .map_cont .wide_map {display: none;width:504px;height: 559px;overflow: hidden;}
 .main_wrap .map_w .map_cont .wide_map.on {display: block;}
+
 .main_wrap .map_w .map_cont .wide_map .area_field {width:504px;height: 559px;background: url("../../image/renew/map_default.png") no-repeat center center;}
 .main_wrap .map_w .map_cont .wide_map.Seoul .area_field {background-image: url("../../image/renew/map_hover01.png");}
 .main_wrap .map_w .map_cont .wide_map.Gyeonggi .area_field {background-image: url("../../image/renew/map_hover02.png");}
@@ -75,9 +76,9 @@
 .main_wrap .map_w .map_cont .wide_map.Jeolla .area_field {background-image: url("../../image/renew/map_hover05.png");}
 .main_wrap .map_w .map_cont .wide_map.Gyeongsang .area_field {background-image: url("../../image/renew/map_hover06.png");}
 .main_wrap .map_w .map_cont .wide_map.Jeju .area_field {background-image: url("../../image/renew/map_hover07.png");}
-
 .main_wrap .map_w .map_cont .wide_map.on .area_field {-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;transition: background 0.2s;}
+
 
 .main_wrap .map_w .wide_list li {display: none;position: absolute;width: 60px;height: 60px;}
 .main_wrap .map_w .wide_list .Seoul {top: 146px;right: 295px;}
