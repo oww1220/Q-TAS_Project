@@ -120,7 +120,7 @@
                 <!--검색박스(펼침)-->
                 <div class="s_box_e_w">
                     <form action="">
-                        <div class="s_box_e mgt60">
+                        <div class="s_box_e mgt25">
                             <div class="table_form">
                                 <table>
                                     <colgroup>
@@ -131,7 +131,7 @@
                                         <tr>
                                             <th scope="row">기간</th>
                                             <td>
-                                                <div class="date_w">
+                                                <div class="date_w h30">
                                                     <div class="ui_date" style="width:200px;">
                                                         <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                                     </div>
@@ -273,7 +273,7 @@
                                                     <input type="radio" id="radioG4_02" name="country" value="PART"/><label for="radioG4_02">해외 선택</label>
                                                 </div>
 
-                                                <a class="btn_col2" href="javascript:popup_country();">더보기</a>
+                                                <a class="btn_col6 widthA" href="javascript:popup_country();">더보기</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -289,14 +289,14 @@
                                                     <input type="radio" id="radioG5_02" name="buyer" value="PART"/><label for="radioG5_02">바이어 선택</label>
                                                 </div>
 
-                                                <a class="btn_col2" href="javascript:popup_buyer();">더보기</a>
+                                                <a class="btn_col6 widthA" href="javascript:popup_buyer();">더보기</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">모델</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="model_name" title="모델 입력창" placeholder="ex) CHPI-380 CHP-241" />
+                                                    <input type="text" class="h30" id="model_name" title="모델 입력창" placeholder="ex) CHPI-380 CHP-241" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -307,7 +307,7 @@
                                             <th scope="row">부품</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="part_name" title="부품 입력창" />
+                                                    <input type="text" class="h30" id="part_name" title="부품 입력창" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -318,7 +318,7 @@
                                             <th scope="row">불량내용</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="poor_comment" title="불량내용 입력창" />
+                                                    <input type="text" class="h30" id="poor_comment" title="불량내용 입력창" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -329,20 +329,21 @@
                                 </table>   
                             </div> 
                         </div>
-                        <div class="btn_w mgt30">
+                        <div class="btn_w mgt20">
                             <button class="btn_col0 rnd" type="button">검색</button>
                         </div>
                     </form>
                 </div>
                 <!--//검색박스(펼침)-->
                 
+                
                 <!--검색박스(기본)-->
                 <div class="s_box_m_w">
                     <form action="">
-                        <div class="s_box_m mgt60">                    
+                        <div class="s_box_m mgt30">                    
                             <ul class="s_box_in">
                                 <li>
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:110px;">
                                         <button type="button">구분(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -352,7 +353,13 @@
                                                         <a href="#" data-val="1">구분(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">구분</a>
+                                                        <a href="#" data-val="2">진행</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">진행 Drop</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">완료</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -361,7 +368,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:160px;">
                                         <button type="button">제품군(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -371,7 +378,7 @@
                                                         <a href="#" data-val="1">제품군(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">제품군</a>
+                                                        <a href="#" data-val="2">의류청정기_고급형</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -380,7 +387,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:123px;">
                                         <button type="button">바코드(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -390,34 +397,46 @@
                                                         <a href="#" data-val="1">바코드(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">바코드</a>
+                                                        <a href="#" data-val="2">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="5">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="6">z</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
+                                
                                 <li>
                                     <div class="input_t">
                                         <label for="txtQaName">품질 PM</label>
-                                        <input id="txtQaName" title="품질PM" type="text" runat="server" style="width:200px;" />
+                                        <input id="txtQaName" class="h30" title="품질PM" type="text" runat="server" value="품질PM" style="width: 95px;" />
                                     </div>
                                 </li>
                                 <li>
                                     <div class="input_t">
                                         <label for="txtAdName">개선 PM</label>
-                                        <input id="txtAdName" title="개선PM" type="text" runat="server" style="width:200px;" />
+                                        <input id="txtAdName" class="h30" title="개선PM" type="text" runat="server" style="width: 95px;" />
                                     </div>
                                 </li>
-                            </ul>
-                            <ul class="s_box_in">
+
                                 <li>
-                                    <div class="date_w">
-                                        <div class="ui_date">
+                                    <div class="date_w h30">
+                                        <div class="ui_date" style="width: 135px;">
                                             <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                         </div>
                                         <span>~</span>
-                                        <div class="ui_date">
+                                        <div class="ui_date" style="width: 135px;">
                                             <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                         </div>
                                     </div>
@@ -425,11 +444,11 @@
                                 <li>
                                     <div class="input_t">
                                         <label for="txtMaktx">모델명</label>
-                                        <input id="txtMaktx" title="모델명" type="text" runat="server" style="width: 234px;" />
+                                        <input id="txtMaktx" class="h30" title="모델명" type="text" runat="server" style="width: 115px;" />
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="select_custum" style="width:185px;">
+                                    <div class="select_custum h30" style="width:110px;">
                                         <button type="button">유형(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -439,7 +458,13 @@
                                                         <a href="#" data-val="1">유형(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">유형2</a>
+                                                        <a href="#" data-val="2">품질</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">위생/오염</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">닥터요청</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -448,7 +473,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:185px;">
+                                    <div class="select_custum h30" style="width:190px;">
                                         <button type="button">개선 방안(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -467,7 +492,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:185px;">
+                                    <div class="select_custum h30" style="width:190px;">
                                         <button type="button">진행 사항(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -484,11 +509,12 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li>
+                                    <button class="btn_search" type="button">검색</button>
+                                </li>
                             </ul>
                         </div>
-                        <div class="btn_w mgt30">
-                            <button class="btn_col0 rnd" type="button">검색</button>
-                        </div>
+                        
                     </form>
                 </div>
                 <!--//검색박스(기본)-->
@@ -496,10 +522,10 @@
                 <!--검색박스(기본2)-->
                 <div class="s_box_m_w">
                     <form action="">
-                        <div class="s_box_m mgt60">                    
+                        <div class="s_box_m mgt30">                    
                             <ul class="s_box_in">
                                 <li>
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:110px;">
                                         <button type="button">구분(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -509,7 +535,13 @@
                                                         <a href="#" data-val="1">구분(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">구분</a>
+                                                        <a href="#" data-val="2">진행</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">진행 Drop</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">완료</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -518,7 +550,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:160px;">
                                         <button type="button">제품군(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -528,7 +560,7 @@
                                                         <a href="#" data-val="1">제품군(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">제품군</a>
+                                                        <a href="#" data-val="2">의류청정기_고급형</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -537,7 +569,7 @@
                                 </li>
                                 <li>
                                     
-                                    <div class="select_custum" style="width:220px;">
+                                    <div class="select_custum h30" style="width:123px;">
                                         <button type="button">바코드(전체)</button>
                                         <input type="hidden" id="" value=""/>
                                         <div class="select_list" >
@@ -547,23 +579,34 @@
                                                         <a href="#" data-val="1">바코드(전체)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" data-val="2">바코드</a>
+                                                        <a href="#" data-val="2">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="5">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="6">z</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
+                                
 
-                            </ul>
-                            <ul class="s_box_in">
                                 <li>
-                                    <div class="date_w">
-                                        <div class="ui_date">
+                                    <div class="date_w h30">
+                                        <div class="ui_date" style="width: 135px;">
                                             <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                         </div>
                                         <span>~</span>
-                                        <div class="ui_date">
+                                        <div class="ui_date" style="width: 135px;">
                                             <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                         </div>
                                     </div>
@@ -571,23 +614,27 @@
                                 <li>
                                     <div class="input_t">
                                         <label for="txtMaktx">모델명</label>
-                                        <input id="txtMaktx" title="모델명" type="text" runat="server" style="width: 234px;" />
+                                        <input id="txtMaktx" class="h30" title="모델명" type="text" runat="server" style="width: 115px;" />
                                     </div>
                                 </li>
                                 <li>
                                     <div class="input_t">
                                         <label for="txtMaktx">고장현상</label>
-                                        <input id="txtMaktx" title="고장현상" type="text" runat="server" style="width: 234px;" />
+                                        <input id="txtMaktx" class="h30" title="고장현상" type="text" runat="server" style="width: 150px;" />
                                     </div>
+                                </li>
+                                
+                                <li>
+                                    <button class="btn_search" type="button">검색</button>
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn_w mgt30">
-                            <button class="btn_col0 rnd" type="button">검색</button>
-                        </div>
+                        
                     </form>
                 </div>
                 <!--//검색박스(기본2)-->
+
+            
 
                 <!--탭메뉴-->
                 <div class="tab_nav length02 mgt60">
@@ -693,8 +740,8 @@
                     <div class="table_list">
                         <table>
                             <colgroup>
-                                <col width="4%" />
-                                <col width="10%" />
+                                <col width="5%" />
+                                <col width="9%" />
                                 <col width="10%" />
                                 <col width="30%" />
                                 <col width="10%" />
@@ -707,11 +754,31 @@
                                 <tr>
                                     <th scope="row">No</th>
                                     <th>
+                                        <div class="select_custum table">
+                                            <button type="button">발생일</button>
+                                            <input type="hidden" id="" value=""/>
+                                            <div class="select_list" >
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" data-val="1">발생일</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-val="2">최신순</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-val="3">과거순</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--
                                         <select name="" id="">
                                             <option value="1" selected>발생일</option>
                                             <option value="2">최신순</option>
                                             <option value="3">과거순</option>
-                                        </select>
+                                        </select>-->
                                     </th>
                                     <th scope="row">발생국가</th>
                                     <th scope="row">불량내용</th>
@@ -724,7 +791,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>234</td>
+                                    <td>122,234</td>
                                     <td>
                                         2020.02.02
                                     </td>
@@ -737,7 +804,7 @@
                                             신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
                                         </a>
                                     </td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
@@ -768,7 +835,7 @@
                                             신규설치하였으나 제품에 들어있던 아이스트레이
                                         </a>
                                     </td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
@@ -795,12 +862,12 @@
                         </table>
                     </div>
 
-                    <div class="table_bottom mgt15">
+                    <div class="table_bottom mgt10">
                         <div class="left"></div>
                         <div class="right">
-                            <div class="btn_w">
-                                <button class="btn_col3" type="button">실패사례 등록</button>
-                                <button class="btn_col3" type="button">엑셀 DOWN</button>
+                            <div class="btn_w ml5">
+                                <button class="btn_col5 widthA" type="button">실패사례 등록</button>
+                                <button class="btn_col5 widthA" type="button">엑셀 DOWN</button>
                             </div>
                         </div>
                     </div>
@@ -864,12 +931,12 @@
 
                 <!--테이블 리스트(스크롤)-->
                 <div class="table_list_w mgt40">
-                    <div class="table_top mgb15">
+                    <div class="table_top mgb10">
                         <div class="left"></div>
                         <div class="right">
-                            <div class="btn_w">
-                                <button class="btn_col3" type="button">실패사례 등록</button>
-                                <button class="btn_col3" type="button">엑셀 DOWN</button>
+                            <div class="btn_w ml5">
+                                <button class="btn_col5 widthA" type="button">실패사례 등록</button>
+                                <button class="btn_col5 widthA" type="button">엑셀 DOWN</button>
                             </div>
                         </div>
                     </div>
@@ -928,7 +995,7 @@
                                     <td>P-6300L</td>
                                     <td>터치오작동</td>
                                     <td>터치오작동</td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
@@ -955,7 +1022,7 @@
                                     <td>P-6300L</td>
                                     <td>터치오작동</td>
                                     <td>터치오작동</td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
@@ -1005,11 +1072,10 @@
                 <!--//페이징-->
 
                 <!--검색박스(하단)-->
-                <div class="s_box_b_w mgt40">
+                <div class="s_box_b_w mgt25">
                     <form action="">
                         <div class="s_box_b">
-                            
-                            <div class="select_custum h50" style="width:170px;">
+                            <div class="select_custum h30" style="width:120px;">
                                 <button type="button">전체</button>
                                 <input type="hidden" id="" value=""/>
                                 <div class="select_list" >
@@ -1028,7 +1094,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="input_s mgl10" style="width: 590px;">
+                            <div class="input_s h30 mgl5" style="width: 440px;">
                                 <input type="text" placeholder="검색어를 입력해주세요." />
                                 <button type="button">검색</button>
                             </div>

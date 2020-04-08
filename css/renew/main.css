@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-#wrap {min-width: 1800px;}
+#wrap {background-color: #ebeef3;}
 
 .main_wrap {background-color: #ebeef3;}
-.main_wrap .main_cont {width: 1800px;margin: 0 auto;padding:50px 0 100px;}
-.main_wrap .main_cont .left ~ .left {margin-left: 20px;}
-.main_wrap .main_cont .left .col_box ~ .col_box {margin-top:20px;}
-.main_wrap h2 {color: #2c343b;font-family:"NotoM";font-size: 23px;}
+.main_wrap .main_cont {width: 1300px;margin: 0 auto;padding:25px 0;}
+.main_wrap .main_cont .left ~ .left {margin-left: 10px;}
+.main_wrap .main_cont .left .col_box ~ .col_box {margin-top:10px;}
+.main_wrap h2 {color: #2c343b;font-family:"NotoB";font-size: 20px;}
 
 .main_tab {text-align: center;background-color: #fff;-webkit-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);-moz-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);height: 62px;position: relative;}
 .main_tab > ul {display: inline-block;zoom: 1;*display: inline;}
@@ -15,65 +15,66 @@
 .main_tab > ul > li.active > a,
 .main_tab > ul > li > a:hover {color: #083d59;border-bottom: 4px solid #4bbcf6;height: 58px;}
 
-.main_wrap .voc_w {width: 220px;height:1149px;background: url("../../image/renew/main_voc_bg.jpg") no-repeat 0 0 #00c0c7;-webkit-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);-moz-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);}
-.main_wrap .voc_w .voc_in {padding:70px 0 50px;}
+.main_wrap .voc_w {width: 165px;height:850px;background: url("../../image/renew/main_voc_bg.jpg") no-repeat center top #00c0c7;-webkit-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);-moz-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);}
+.main_wrap .voc_w .voc_in {padding:45px 0 50px;}
 .main_wrap .voc_w .voc_in ~ .voc_in {background: url("../../image/renew/main_voc_line.png") repeat-x 0 0 ;}
-.main_wrap .voc_w .voc_in h4 {text-align: center;color:#fff;font-size: 34px;font-family:"NotoL";line-height: 1.2;}
-.main_wrap .voc_w .voc_in ul {padding: 50px 44px 0;}
-.main_wrap .voc_w .voc_in ul li {border-bottom:1px solid #59ccf4;padding-bottom: 8px;}
-.main_wrap .voc_w .voc_in ul li + li {margin-top:25px;}
-.main_wrap .voc_w .voc_in ul li > strong {display: block;margin-bottom: 13px;font-size: 16px;font-family:"NotoM";font-weight:normal;color:#b3eaff;}
-.main_wrap .voc_w .voc_in ul li > div {color: #fff;font-size: 16px;text-align: right;}
-.main_wrap .voc_w .voc_in ul li > div > b {font-size: 42px;font-family:"RobotoB";font-weight:normal;}
-.main_wrap .voc_w .voc_in ul li > div.small > b {font-size: 22px;}
+.main_wrap .voc_w .voc_in h4 {text-align: center;color:#fff;font-size: 26px;font-family:"NotoL";line-height: 1.2;}
+.main_wrap .voc_w .voc_in ul {padding: 35px 35px 0;}
+.main_wrap .voc_w .voc_in ul li {border-bottom:1px solid #59ccf4;padding-bottom: 3px;}
+.main_wrap .voc_w .voc_in ul li + li {margin-top:17px;}
+.main_wrap .voc_w .voc_in ul li > strong {display: block;margin-bottom: 8px;font-size: 14px;font-family:"NotoM";font-weight:normal;color:#b3eaff;}
+.main_wrap .voc_w .voc_in ul li > div {color: #fff;font-size: 14px;text-align: right;}
+.main_wrap .voc_w .voc_in ul li > div > b {font-size: 33px;font-family:"RobotoB";font-weight:normal;}
+.main_wrap .voc_w .voc_in ul li > div.small > b {font-size: 16px;}
 .main_wrap .voc_w .voc_in ul li > div.small {margin-bottom: 3px;}
-.main_wrap .voc_w .voc_in ul li > div > span {margin-left: 5px;font-size: 16px;}
+.main_wrap .voc_w .voc_in ul li > div > span {margin-left: 5px;font-size: 14px;}
 .main_wrap .voc_w .voc_in ~ .voc_in ul li {border-color: #85f7fc;}
 .main_wrap .voc_w .voc_in ~ .voc_in ul li > strong {color:#85f7fc;}
 
 
-.main_wrap .col_box {background-color: #fff;padding: 44px;-webkit-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);-moz-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);}
+.main_wrap .col_box {background-color: #fff;padding: 30px;-webkit-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);-moz-box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);box-shadow: 0px 5px 5px 0px rgba(222,226,233,1);}
 .main_wrap .col_box:after {content:"";display:block;clear:both;}
-.main_wrap .col_box .col_top {position: absolute;top:-4px;right:0;}
-.main_wrap .col_box table {width: 100%;margin-top: 13px;}
-.main_wrap .col_box table th {border-bottom: 2px solid #025691;padding: 11px 5px;color: #333;font-size: 16px;font-family:"NotoM";font-weight:normal;text-align: center;line-height: 1.3;}
-.main_wrap .col_box table td {text-align: center;line-height: 1.3;color:#666;font-size: 14px;padding: 8px;border-bottom: 1px solid #efeff2;height: 22px;}
+.main_wrap .col_box .col_top {position: absolute;top:-4px;right:0;font-size: 0;}
+.main_wrap .col_box table {width: 100%;margin-top: 10px;}
+.main_wrap .col_box table th {border-bottom: 2px solid #025691;padding: 4px;color: #333;font-size: 14px;font-family:"NotoM";font-weight:normal;text-align: center;line-height: 1.3;}
+.main_wrap .col_box table td {text-align: center;line-height: 1.3;color:#666;font-size: 12px;padding: 4px;border-bottom: 1px solid #efeff2;height: 22px;}
 .main_wrap .col_box tbody tr:last-child td {border-color: #ddd;}
-.main_wrap .col_box table .color {color:#025691;font-size: 13px;}
-.main_wrap .col_box table .bold {color: #222;font-size: 15px;}
+.main_wrap .col_box table .color {color:#025691;font-size: 12px;}
+.main_wrap .col_box table .bold {color: #222;font-size: 12px;}
 
 .main_wrap .col_box .col_top .glaph_guide {display: inline-block;vertical-align: middle;}
 .main_wrap .col_box .col_top .glaph_guide ul li {display: inline-block;vertical-align: middle;font-size: 0;margin-left: 15px;}
-.main_wrap .col_box .col_top .glaph_guide ul li strong {display: inline-block;vertical-align: middle;width: 10px;height: 10px;border-radius: 50px;margin-right: 5px;}
-.main_wrap .col_box .col_top .glaph_guide ul li span {font-size: 14px;color: #999;display: inline-block;vertical-align: middle;}
+.main_wrap .col_box .col_top .glaph_guide ul li strong {display: inline-block;vertical-align: middle;width: 8px;height: 8px;border-radius: 50px;margin-right: 5px;}
+.main_wrap .col_box .col_top .glaph_guide ul li span {font-size: 12px;color: #999;display: inline-block;vertical-align: middle;}
 
-.main_wrap .month_w {width: 945px;height:295px;position: relative;}
+.main_wrap .month_w {width: 644px;height:222px;position: relative;}
 .main_wrap .month_w .month_in {position: absolute;bottom: 0;left: 0;}
-.main_wrap .new_w {width: 655px;height:275px;position: relative;float: left;}
+.main_wrap .new_w {width: 490px;height:214px;position: relative;float: left;}
 
-.main_wrap .current_w {width: 245px;height:275px;position: relative;float: right;}
+.main_wrap .current_w {width: 115px;height:214px;position: relative;float: right;}
+.main_wrap .current_w h2 {font-family:"NotoM";font-size: 18px;}
 .main_wrap .current_w .current_in {position: absolute;bottom: 0;left: 0;border-bottom: 1px solid #ddd;}
 
-.main_wrap .issue_w {width: 419px;height:295px;position: relative;}
-.main_wrap .issue_w .issue_in {margin-top: 40px;}
-.main_wrap .issue_w .issue_in li + li {margin-top: 7px;} 
+.main_wrap .issue_w {width: 351px;height:222px;position: relative;}
+.main_wrap .issue_w .issue_in {margin-top: 25px;}
+.main_wrap .issue_w .issue_in li + li {margin-top: 4px;} 
 .main_wrap .issue_w .list_in:after {content:"";display:block;clear:both;}
-.main_wrap .issue_w .list_in .view {width: 116px;height: 72px;float: left;display: flex;align-items: center;justify-content: center;overflow: hidden;border-radius: 3px;}
+.main_wrap .issue_w .list_in .view {width: 88px;height: 56px;float: left;display: flex;align-items: center;justify-content: center;overflow: hidden;border-radius: 3px;}
 .main_wrap .issue_w .list_in .view img {width: 100%;}
-.main_wrap .issue_w .list_in .infos {float: left;margin-left: 20px;width: 283px;}
+.main_wrap .issue_w .list_in .infos {float: left;margin-left: 15px;width: 245px;}
 .main_wrap .issue_w .list_in .infos .info_tit {font-size: 0;margin-top: 3px;}
-.main_wrap .issue_w .list_in .infos .info_tit span {display: inline-block;vertical-align: middle;color:#025691;font-size: 15px;margin-left: 5px;line-height: 17px;font-family:"NotoM";}
-.main_wrap .issue_w .list_in .infos .info_txt {color: #333;font-size: 15px;line-height: 17px;margin-top: 10px;}
+.main_wrap .issue_w .list_in .infos .info_tit span {display: inline-block;vertical-align: middle;color:#025691;font-size: 14px;margin-left: 5px;line-height: 17px;font-family:"NotoB";}
+.main_wrap .issue_w .list_in .infos .info_txt {color: #333;font-size: 13px;line-height: 15px;margin-top: 5px;width: 245px;}
 
 
 
-.main_wrap .map_w {width: 507px;height: 706px;padding:20px 0;margin-top:20px;position: relative;}
-.main_wrap .map_w h2 {margin-left: 20px;font-size: 26px;}
-.main_wrap .map_w .map_cont {width:504px;height: 559px;}
-.main_wrap .map_w .map_cont .wide_map {display: none;width:504px;height: 559px;overflow: hidden;}
+.main_wrap .map_w {width: 411px;height: 537px;padding:20px 0 0;margin-top:10px;position: relative;}
+.main_wrap .map_w h2 {margin-left: 20px;}
+.main_wrap .map_w .map_cont {width:411px;height: 435px;}
+.main_wrap .map_w .map_cont .wide_map {display: none;width:411px;height: 435px;overflow: hidden;}
 .main_wrap .map_w .map_cont .wide_map.on {display: block;}
 
-.main_wrap .map_w .map_cont .wide_map .area_field {width:504px;height: 559px;background: url("../../image/renew/map_default.png") no-repeat center center;}
+.main_wrap .map_w .map_cont .wide_map .area_field {width:411px;height: 435px;background: url("../../image/renew/map_default.png") no-repeat center center;}
 .main_wrap .map_w .map_cont .wide_map.Seoul .area_field {background-image: url("../../image/renew/map_hover01.png");}
 .main_wrap .map_w .map_cont .wide_map.Gyeonggi .area_field {background-image: url("../../image/renew/map_hover02.png");}
 .main_wrap .map_w .map_cont .wide_map.Gangwon .area_field {background-image: url("../../image/renew/map_hover03.png");}
@@ -86,38 +87,38 @@ animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;tra
 
 
 .main_wrap .map_w .wide_list li {display: none;position: absolute;width: 60px;height: 60px;}
-.main_wrap .map_w .wide_list .Seoul {top: 146px;right: 295px;}
-.main_wrap .map_w .wide_list .Gyeonggi {top: 213px;right: 284px;}
-.main_wrap .map_w .wide_list .Gangwon {top: 155px;right: 195px;}
-.main_wrap .map_w .wide_list .Chungcheong {top: 290px;right: 288px;}
-.main_wrap .map_w .wide_list .Jeolla {top: 405px;right: 300px;}
-.main_wrap .map_w .wide_list .Gyeongsang {top: 328px;right: 151px;}
-.main_wrap .map_w .wide_list .Jeju {top: 462px;right: 121px;}
+.main_wrap .map_w .wide_list .Seoul {top: 110px;right: 233px;}
+.main_wrap .map_w .wide_list .Gyeonggi {top: 163px;right: 222px;}
+.main_wrap .map_w .wide_list .Gangwon {top: 118px;right: 150px;}
+.main_wrap .map_w .wide_list .Chungcheong {top: 227px;right: 227px;}
+.main_wrap .map_w .wide_list .Jeolla {top: 322px;right: 239px;}
+.main_wrap .map_w .wide_list .Gyeongsang {top: 261px;right: 113px;}
+.main_wrap .map_w .wide_list .Jeju {top: 376px;right: 89px;}
 
 .main_wrap .map_w .wide_list li a {color:#616a77;display: block;font: 0/0 a;height: 60px;}
-.main_wrap .map_w .wide_list li a span {font-size: 14px;position: absolute;width: 80px;line-height: 15px;font-family:"RobotoR";}
+.main_wrap .map_w .wide_list li a span {font-size: 13px;position: absolute;width: 65px;line-height: 15px;font-family:"RobotoR";}
 
-.main_wrap .map_w .wide_list .Seoul a span {top: -9px;right: 110px;text-align: right;}
-.main_wrap .map_w .wide_list .Gyeonggi a span {top: 22px;right: 110px;text-align: right;}
-.main_wrap .map_w .wide_list .Gangwon a span {top: -8px;left:95px;text-align: left;}
-.main_wrap .map_w .wide_list .Chungcheong a span {top: 23px;right: 119px;text-align: right;}
-.main_wrap .map_w .wide_list .Jeolla a span {top: 23px;right: 110px;text-align: right;}
-.main_wrap .map_w .wide_list .Gyeongsang a span {top: 23px;left: 120px;text-align: left;}
-.main_wrap .map_w .wide_list .Jeju a span {top: -11px;left: 86px;text-align: left;}
+.main_wrap .map_w .wide_list .Seoul a span {top: -3px;right: 95px;text-align: right;}
+.main_wrap .map_w .wide_list .Gyeonggi a span {top: 25px;right: 95px;text-align: right;}
+.main_wrap .map_w .wide_list .Gangwon a span {top: -3px;left:82px;text-align: left;}
+.main_wrap .map_w .wide_list .Chungcheong a span {top: 25px;right: 102px;text-align: right;}
+.main_wrap .map_w .wide_list .Jeolla a span {top: 25px;right: 91px;text-align: right;}
+.main_wrap .map_w .wide_list .Gyeongsang a span {top: 23px;left: 102px;text-align: left;}
+.main_wrap .map_w .wide_list .Jeju a span {top: -11px;left: 76px;text-align: left;}
 
 .main_wrap .map_w .wide_list li.on a,
 .main_wrap .map_w .wide_list li.hover a {color:#008cd5;}
 .main_wrap .map_w .wide_list li.act {display: inline-block;-webkit-transform-origin: bottom center;transform-origin: bottom center;-webkit-animation: fadein 0.3s 1;animation: fadein 0.3s 1;transform: translate3d(0, 0, 0);}
 
-.main_wrap .map_nav {position: absolute;bottom: 30px;width: 507px;left: 0;}
+.main_wrap .map_nav {position: absolute;bottom: -5px;width: 411px;left: 0;}
 .main_wrap .map_nav ul {font-size: 0;text-align: center;}
-.main_wrap .map_nav li {display: inline-block;margin: 0 6px 12px;}
+.main_wrap .map_nav li {display: inline-block;margin: 0 6px 5px;}
 
 
 .main_wrap .map_w .area_map {display: none;position: relative;}
 .main_wrap .map_w .area_map .area_close {position: absolute;top:46px;right:15px;}
-.main_wrap .map_w .area_map .area_list > ul > li {display: none;width:504px;height: 559px;}
-.main_wrap .map_w .area_map .area_list > ul > li .area_field {width:504px;height: 559px;background-repeat: no-repeat;background-position: center center;font: 0/0 a;}
+.main_wrap .map_w .area_map .area_list > ul > li {display: none;width:411px;height: 435px;}
+.main_wrap .map_w .area_map .area_list > ul > li .area_field {width:411px;height: 435px;background-repeat: no-repeat;background-position: center center;font: 0/0 a;background-size: 411px;}
 .main_wrap .map_w .area_map .area_list > ul > .Seoul .area_field {background-image: url("../../image/renew/map_act01.png");}
 .main_wrap .map_w .area_map .area_list > ul > .Gyeonggi .area_field {background-image: url("../../image/renew/map_act02.png");}
 .main_wrap .map_w .area_map .area_list > ul > .Gangwon .area_field {background-image: url("../../image/renew/map_act03.png");}
@@ -130,19 +131,19 @@ animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;tra
 animation: scale-up-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
 .main_wrap .map_w .area_map .area_list .area_in li {position: absolute;display: none;padding:0 10px 13px;}
 .main_wrap .map_w .area_map .area_list .area_in li.act {display: block;-webkit-transform-origin: bottom center;transform-origin: bottom center;-webkit-animation: fadein 0.2s 1;animation: fadein 0.2s 1;transform: translate3d(0, 0, 0);}
-.main_wrap .map_w .area_map .area_list .area_in li a {display: block;border: 1px solid #11a7df;height: 16px;line-height:15px;padding: 0 5px;color: #657080;font-size: 12px;position: relative;background-color: #fff;min-width: 34px;text-align: center;top: -5px;}
+.main_wrap .map_w .area_map .area_list .area_in li a {display: block;border: 1px solid #11a7df;height: 15px;line-height:14px;padding: 0 5px;color: #657080;font-size: 11px;position: relative;background-color: #fff;min-width: 30px;text-align: center;top: -5px;}
 .main_wrap .map_w .area_map .area_list .area_in li a:after {display: block;content: "";width: 6px;height: 5px;background: url("../../image/renew/icon_tool_off.png") no-repeat 0 0;
 position: absolute;left:50%;margin-left: -3px;bottom: -5px;}
 .main_wrap .map_w .area_map .area_list .area_in li.hover a {background-color: #016fa3;color:#fff;border-color: #016fa3;}
 .main_wrap .map_w .area_map .area_list .area_in li.hover a:after {background-image: url("../../image/renew/icon_tool_on.png");}
 
 .main_wrap .map_w .area_map .tooltip_w {position: absolute;display: none;padding-top: 5px; transition:all 1s;z-index: 2;}
-.main_wrap .map_w .area_map .tooltip_w .tooltip_in {width: 285px;padding:30px;background-color: #fff;-webkit-box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);-moz-box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);}
+.main_wrap .map_w .area_map .tooltip_w .tooltip_in {width: 270px;padding:20px;background-color: #fff;-webkit-box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);-moz-box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);box-shadow: 0px 20px 20px 0px rgba(4, 4, 4, 0.2);}
 .main_wrap .map_w .area_map .tooltip_w.on {display: block;}
 .main_wrap .map_w .area_map .tooltip_w .tooltip_close {position: absolute;top: 20px;right: 20px;}
 
-.main_wrap .map_w .area_map .tooltip_w .tooltip_tit strong {font-size: 24px;font-family:"NotoM";font-weight:normal;color:#025691;}
-.main_wrap .map_w .area_map .tooltip_w .tooltip_tit span {color: #707070;font-size: 15px;margin-left: 5px;}
+.main_wrap .map_w .area_map .tooltip_w .tooltip_tit strong {font-size: 22px;font-family:"NotoM";font-weight:normal;color:#025691;}
+.main_wrap .map_w .area_map .tooltip_w .tooltip_tit span {color: #707070;font-size: 13px;margin-left: 5px;}
 .main_wrap .map_w .area_map .tooltip_w li:after {content:"";display:block;clear:both;}
 .main_wrap .map_w .area_map .tooltip_w ul {margin-top: 20px;}
 .main_wrap .map_w .area_map .tooltip_w li + li {margin-top: 10px;}
@@ -151,7 +152,7 @@ position: absolute;left:50%;margin-left: -3px;bottom: -5px;}
 .main_wrap .map_w .area_map .tooltip_w li > span {float: right;line-height: 17px;width: 30px;text-align: center;color:#025691;font-size: 14px;}
 .main_wrap .map_w .area_map .tooltip_dim {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: url("../../image/renew/bg_tool.png") repeat 0 0;z-index: 1;display: none;}
 
-.main_wrap .map_w .area_map .tooltip_w table {width: 100%;margin-top: 5px;}
+.main_wrap .map_w .area_map .tooltip_w table {width: 100%;}
 .main_wrap .map_w .area_map .tooltip_w table th {border-bottom: 2px solid #025691;padding: 8px 3px;color: #333;font-size: 13px;font-family:"NotoM";font-weight:normal;text-align: center;line-height: 1.3;}
 .main_wrap .map_w .area_map .tooltip_w table td {text-align: center;line-height: 1.3;color:#666;font-size: 13px;padding: 8px 3px;border-bottom: 1px solid #efeff2;}
 .main_wrap .map_w .area_map .tooltip_w tbody tr:last-child td {border-color: #ddd;}

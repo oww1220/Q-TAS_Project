@@ -541,7 +541,8 @@ var QTAS = QTAS || {
 		},
     },
     iscrolls: {
-		cash: null,
+        cash: null,
+        num: 0,
 		init: function(target, option){
 
 			this.cash = this.cash ? this.cash : QTAS.Map.init();
@@ -549,7 +550,7 @@ var QTAS = QTAS || {
             $(target).each(function(idx, item){
                 $(target)[idx].iscrolls = new IScroll(item, option);
                 //console.log(item);
-                this.cash.put(idx, {sort: item, option: option});
+                this.cash.put(this.num++, {sort: item, option: option});
             }.bind(this));
             //console.log(this.cash);
 		},
@@ -557,8 +558,10 @@ var QTAS = QTAS || {
 			var that = this;
 			if(that.cash){
 				$.each(that.cash.map, function(key, value){
-                    //console.log(key, value.sort.iscrolls);
-                    value.sort.iscrolls.scrollTo(0, 0);                 
+                    if(value.sort.className == "select_list"){
+                       //console.log(key, value.sort.iscrolls);
+                        value.sort.iscrolls.scrollTo(0, 0);                 
+                    }
 				});
 			}
 			else{
@@ -648,8 +651,8 @@ var QTAS = QTAS || {
             var _target= $(e.target);
             var _targetC = this.targetC =  $(e.currentTarget);
             var x = Number(_targetC.attr("data-x")) + _targetC.height();
-            var y = Number(_targetC.attr("data-y")) - (this.$tooltip.width() / 2) + (_targetC.width()/3) + 10;
-            y = y > 155 ? 155:y;
+            var y = Number(_targetC.attr("data-y")) - (this.$tooltip.width() / 2) + (_targetC.width()/3) + 20;
+            y = y > 100 ? 100:y;
             var sort = _targetC.attr("data-p");
             var val = _target.text()
             
@@ -864,8 +867,18 @@ $(window).on("load", function(){
 			shrinkScrollbars: 'scale',
             fadeScrollbars: true,
             hScroll:false
-		});
-			
+		});	
+    }
+    if($(".table_list.fixed").length){
+		QTAS.iscrolls.init(".table_list.fixed", { 
+			scrollbars: true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+            fadeScrollbars: false,
+            scrollX:true,
+            scrollY:false,
+		});	
 	}
 	
 });

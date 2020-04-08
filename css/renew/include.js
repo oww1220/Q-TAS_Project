@@ -148,11 +148,8 @@ $(function(){
 	+				'<li>'
 	+					'주소 : 충청남도 공주시 유구읍 유구마곡사로 136-23 '
 	+				'</li>'
-	+				'<li>'
-	+					'대표이사 : 김동현'
-	+				'</li>'
 	+			'</ul>'
-	+			'<div class="copyright">Copyright ⓒ Woongjin Coway Co.Ltd, All Reserved.</div>'
+	+			'<div class="copyright">Copyright ⓒ Coway Co.Ltd, All Reserved.</div>'
 	+		'</div>'
 
 	+	'</div>'

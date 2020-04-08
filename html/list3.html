@@ -120,7 +120,7 @@
                 <!--검색박스(펼침)-->
                 <div class="s_box_e_w">
                     <form action="">
-                        <div class="s_box_e mgt60">
+                        <div class="s_box_e mgt25">
                             <div class="table_form">
                                 <table>
                                     <colgroup>
@@ -131,7 +131,7 @@
                                         <tr>
                                             <th scope="row">기간</th>
                                             <td>
-                                                <div class="date_w">
+                                                <div class="date_w h30">
                                                     <div class="ui_date" style="width:200px;">
                                                         <input type="text" class="datepicker" placeholder="yyyy-mm-dd" />
                                                     </div>
@@ -273,7 +273,7 @@
                                                     <input type="radio" id="radioG4_02" name="country" value="PART"/><label for="radioG4_02">해외 선택</label>
                                                 </div>
 
-                                                <a class="btn_col2" href="javascript:popup_country();">더보기</a>
+                                                <a class="btn_col6 widthA" href="javascript:popup_country();">더보기</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -289,14 +289,14 @@
                                                     <input type="radio" id="radioG5_02" name="buyer" value="PART"/><label for="radioG5_02">바이어 선택</label>
                                                 </div>
 
-                                                <a class="btn_col2" href="javascript:popup_buyer();">더보기</a>
+                                                <a class="btn_col6 widthA" href="javascript:popup_buyer();">더보기</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">모델</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="model_name" title="모델 입력창" placeholder="ex) CHPI-380 CHP-241" />
+                                                    <input type="text" class="h30" id="model_name" title="모델 입력창" placeholder="ex) CHPI-380 CHP-241" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -307,7 +307,7 @@
                                             <th scope="row">부품</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="part_name" title="부품 입력창" />
+                                                    <input type="text" class="h30" id="part_name" title="부품 입력창" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -318,7 +318,7 @@
                                             <th scope="row">불량내용</th>
                                             <td>
                                                 <div class="input_t">
-                                                    <input type="text" id="poor_comment" title="불량내용 입력창" />
+                                                    <input type="text" class="h30" id="poor_comment" title="불량내용 입력창" />
                                                     <div class="txt_caution">
                                                         2개 이상 복수 검색 가능 (띄어쓰기 필수)
                                                     </div>
@@ -329,7 +329,7 @@
                                 </table>   
                             </div> 
                         </div>
-                        <div class="btn_w mgt30">
+                        <div class="btn_w mgt20">
                             <button class="btn_col0 rnd" type="button">검색</button>
                         </div>
                     </form>
@@ -338,7 +338,7 @@
                 
 
                 <!--탭메뉴-->
-                <div class="tab_nav length03 mgt60">
+                <div class="tab_nav length03 mgt40">
                     <ul class="clear_both">
                         <li class="active">
                             <a href="#"><span>전체(245)</span></a>
@@ -354,21 +354,21 @@
                 <!--//탭메뉴-->
 
                 <!--테이블 리스트-->
-                <div class="table_list_w mgt40">
-                    <div class="table_top mgb15">
+                <div class="table_list_w mgt25">
+                    <div class="table_top mgb10">
                         <div class="left"></div>
                         <div class="right">
-                            <div class="btn_w">
-                                <button class="btn_col3" type="button">실패사례 등록</button>
-                                <button class="btn_col3" type="button">엑셀 DOWN</button>
+                            <div class="btn_w ml5">
+                                <button class="btn_col5 widthA" type="button">실패사례 등록</button>
+                                <button class="btn_col5 widthA" type="button">엑셀 DOWN</button>
                             </div>
                         </div>
                     </div>
                     <div class="table_list">
                         <table>
                             <colgroup>
-                                <col width="4%" />
-                                <col width="10%" />
+                                <col width="5%" />
+                                <col width="9%" />
                                 <col width="10%" />
                                 <col width="30%" />
                                 <col width="10%" />
@@ -381,11 +381,31 @@
                                 <tr>
                                     <th scope="row">No</th>
                                     <th>
+                                        <div class="select_custum table">
+                                            <button type="button">발생일</button>
+                                            <input type="hidden" id="" value=""/>
+                                            <div class="select_list" >
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" data-val="1">발생일</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-val="2">최신순</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-val="3">과거순</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--
                                         <select name="" id="">
                                             <option value="1" selected>발생일</option>
                                             <option value="2">최신순</option>
                                             <option value="3">과거순</option>
-                                        </select>
+                                        </select>-->
                                     </th>
                                     <th scope="row">발생국가</th>
                                     <th scope="row">불량내용</th>
@@ -411,7 +431,7 @@
                                             신규설치하였으나 제품에 들어있던 아이스트레이 이탈 메인탱크
                                         </a>
                                     </td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
@@ -442,7 +462,7 @@
                                             신규설치하였으나 제품에 들어있던 아이스트레이
                                         </a>
                                     </td>
-                                    <td class="pd11">
+                                    <td class="pd5">
                                         <div class="sum">
                                             <img src="../image/renew/sum_t01.png" alt="썸네일">
                                         </div>
