@@ -749,6 +749,17 @@
 	<footer id="footer" class="footer">
 	</footer>
 	<!--//후터-->
+	<script>
+		$(function(){
+			if($(".MapVoc").length){
+				var voc = new (QTAS.MapLogic(jQuery))($(".MapVoc"), function(sort, val){
+					/*각 지점 마우스 호버후*/
+					console.log("callback", sort, val);
+				});
+				console.log(voc);
+			}
+		});
+	</script>
 </div>
 
 </body>

@@ -573,8 +573,9 @@ var QTAS = QTAS || {
     /*지도로직*/
     MapLogic: function($){
 
-        function Map($elm) {
+        function Map($elm, callback) {
             this.$elm = $elm;
+            this.callback = callback;
             this.init();
         }
 
@@ -671,6 +672,8 @@ var QTAS = QTAS || {
 
             this.$tooltip.addClass("on");
 
+            this.callback(sort, val);
+
             return false;
         };
         Map.prototype.areaLeave = function(e) {
@@ -765,12 +768,6 @@ $(function(){
 
     var LAYER_DIM = ".layer_dimmed",
 		LAYER_DIV = ".pop_layer";
-
-    if($(".MapVoc").length){
-        var voc = new (QTAS.MapLogic(jQuery))($(".MapVoc"));
-        console.log(voc);
-    }
-
 
     QTAS.event.nav(".nav_wrap");
     QTAS.event.changeSelect(".sort_select select");
