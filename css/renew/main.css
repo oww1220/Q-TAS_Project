@@ -129,7 +129,7 @@ animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;tra
 
 .main_wrap .map_w .area_map .area_list > ul > li.act {display: block;-webkit-animation: scale-up-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 animation: scale-up-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
-.main_wrap .map_w .area_map .area_list .area_in li {position: absolute;display: none;padding:0 10px 13px;}
+.main_wrap .map_w .area_map .area_list .area_in li {position: absolute;display: none;padding:0 10px 0px;}
 .main_wrap .map_w .area_map .area_list .area_in li.act {display: block;-webkit-transform-origin: bottom center;transform-origin: bottom center;-webkit-animation: fadein 0.2s 1;animation: fadein 0.2s 1;transform: translate3d(0, 0, 0);}
 .main_wrap .map_w .area_map .area_list .area_in li a {display: block;border: 1px solid #11a7df;height: 15px;line-height:14px;padding: 0 5px;color: #657080;font-size: 11px;position: relative;background-color: #fff;min-width: 30px;text-align: center;top: -5px;}
 .main_wrap .map_w .area_map .area_list .area_in li a:after {display: block;content: "";width: 6px;height: 5px;background: url("../../image/renew/icon_tool_off.png") no-repeat 0 0;
