@@ -604,7 +604,7 @@ var QTAS = QTAS || {
             this.$nav.on("click", "li", this.mapOpen.bind(this));
 
             /*지역지도 호버*/
-            this.$area.find(".area_in").on("mouseenter", "li", this.areaHover.bind(this));
+            //this.$area.find(".area_in").on("mouseenter", "li", this.areaHover.bind(this));
             /*
             this.$tooltip.on("mouseenter", function(e){
                 this.$tooltip.addClass("on");

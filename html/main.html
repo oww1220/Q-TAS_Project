@@ -754,9 +754,18 @@
 			if($(".MapVoc").length){
 				var voc = new (QTAS.MapLogic(jQuery))($(".MapVoc"), function(sort, val){
 					/*각 지점 마우스 호버후*/
-					console.log("callback", sort, val);
+					//console.log("callback", sort, val);
 				});
 				console.log(voc);
+
+				/*클릭 이벤트*/
+				$(".MapVoc .area_in li").on("click", function(e){
+
+					console.log("click");
+					/*레이어 띠우는 메소드 -ajax로 데이터 호출하고 성공 콜백에 넣어주시면될듯합니다.*/
+					voc.areaHover(e);
+				});
+
 			}
 		});
 	</script>
